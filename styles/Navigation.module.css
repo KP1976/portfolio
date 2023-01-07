@@ -1,10 +1,29 @@
 .navigation {
   display: flex;
+  justify-content: space-between;
 }
 
 .logo {
   color: var(--accent-color);
   font-size: 1.8rem;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 700;
+}
+
+.menu {
+  align-items: center;
+  color: white;
+  display: flex;
+  gap: 0 1.6em;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-item {
+  list-style-type: none;
+}
+
+.menu-item-link {
+  font-size: 1.4rem;
 }

@@ -4,7 +4,7 @@ import { Navigation } from './Navigation';
 import styles from '../styles/Home.module.css';
 import { Ubuntu } from '@next/font/google';
 
-const ubuntu = Ubuntu({ weight: '700', subsets: ['latin'] });
+const ubuntu = Ubuntu({ weight: ['300', '700'], subsets: ['latin'] });
 
 const Home = () => {
   return (
