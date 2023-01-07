@@ -1,9 +1,16 @@
+:root {
+  --background-color: hsl(0, 0%, 9%);
+  --main-color: hsl(356, 60%, 67%);
+  --accent-color: hsl(208, 53%, 66%);
+}
+
 html {
   font-size: 62.5%;
 }
 
 html,
 body {
+  background-color: var(--background-color);
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -19,7 +26,7 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
@@ -27,4 +34,4 @@ a {
     color: white;
     background: black;
   }
-}
+} */

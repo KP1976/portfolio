@@ -1,3 +1,10 @@
-.test {
-  color: red;
+.navigation {
+  display: flex;
+}
+
+.logo {
+  color: var(--accent-color);
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
 }
