@@ -1,0 +1,59 @@
+.header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2.5rem 0;
+}
+
+.header-image {
+  height: 17.5rem;
+  width: 20rem;
+}
+
+.header-title {
+  font-size: 3.2rem;
+  margin: 1.6rem 0 2.5rem;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.header-title-strong {
+  color: var(--main-color);
+  line-height: 1.4;
+}
+
+.header-subtitle {
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 1.4;
+  margin: 0 0 2.5rem 0;
+  width: 99.9%;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.6rem;
+  width: 100%;
+}
+
+.cta-button {
+  background-color: var(--main-color);
+  border: none;
+  border-radius: 2rem;
+  color: var(--secondary-text-color);
+  font-size: 1.4rem;
+  height: 4.1rem;
+  line-height: 1.2;
+  padding: 1.2rem 1.6rem;
+  text-transform: uppercase;
+  width: 12.1rem;
+}
+
+.cta-button-second {
+  background-color: transparent;
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+  width: 15.2rem;
+}
