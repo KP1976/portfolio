@@ -6,8 +6,6 @@ export const ProjectsList = () => {
   return (
     <ul className={styles['projects-list']}>
       <Project />
-      <Project />
-      <Project />
     </ul>
   );
 };

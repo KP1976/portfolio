@@ -3,3 +3,32 @@
   border-radius: 2.4em;
   padding: 3.2em;
 }
+
+.project-image {
+  border-radius: 2.4em;
+  height: 14.7rem;
+  margin-bottom: 2.4em;
+  width: 100%;
+}
+
+.project-title-icon-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-title {
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+.project-icon {
+  height: 1.8em;
+  width: 1.8em;
+}
+
+.project-description {
+  font-size: 1.4rem;
+  line-height: 120%;
+  margin: 1.2rem 0 0 0;
+}
