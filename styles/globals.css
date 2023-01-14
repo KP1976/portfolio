@@ -1,5 +1,6 @@
 :root {
   --background-color: hsl(0, 0%, 9%);
+  --background-project-color: hsl(0, 0%, 13%);
   --main-color: hsl(356, 60%, 67%);
   --accent-color: hsl(208, 53%, 66%);
   --secondary-text-color: hsl(238, 100%, 10%);
