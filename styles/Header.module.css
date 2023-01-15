@@ -4,6 +4,29 @@
   flex-direction: column;
   justify-content: center;
   padding-top: 2.5rem;
+  position: relative;
+}
+
+.header-flare1 {
+  background-color: var(--main-color);
+  filter: blur(110px);
+  border-radius: 50%;
+  height: 17.8rem;
+  left: 25%;
+  position: absolute;
+  top: -25%;
+  width: 17.8rem;
+}
+
+.header-flare2 {
+  background-color: rgba(122, 171, 214, 50%);
+  filter: blur(110px);
+  border-radius: 50%;
+  height: 25.9rem;
+  right: -37%;
+  position: absolute;
+  top: 10%;
+  width: 25.9rem;
 }
 
 .header-image {

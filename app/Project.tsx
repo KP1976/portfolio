@@ -1,20 +1,25 @@
 import React from 'react';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import styles from '../styles/Project.module.css';
-import todoProject from '../public/todo.jpg';
 import githubIcon from '../public/github.png';
 
-export const Project = () => {
+interface Props {
+  image: StaticImageData;
+  projectTitle: string;
+  projectDescription: string;
+}
+
+export const Project = ({ image, projectTitle, projectDescription }: Props) => {
   return (
     <li className={styles.project}>
       <Image
         className={styles['project-image']}
-        src={todoProject}
+        src={image}
         alt="ToDo application"
       />
 
       <div className={styles['project-title-icon-container']}>
-        <h3 className={styles['project-title']}>Aplikacja TO-DO</h3>
+        <h3 className={styles['project-title']}>{projectTitle}</h3>
         <a
           target="_blank"
           href="https://github.com/KP1976/TaskManager_frontend"
@@ -28,9 +33,7 @@ export const Project = () => {
         </a>
       </div>
 
-      <p className={styles['project-description']}>
-        Full-stackowa aplikacja do zarządzania zadaniami.
-      </p>
+      <p className={styles['project-description']}>{projectDescription}</p>
     </li>
   );
 };

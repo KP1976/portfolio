@@ -10,6 +10,8 @@ const ubuntu = Ubuntu({ weight: '700', subsets: ['latin'] });
 export const Header = () => {
   return (
     <header className={styles.header}>
+      <div className={styles['header-flare1']}></div>
+      <div className={styles['header-flare2']}></div>
       <Image className={styles['header-image']} src={headerPic} alt="" />
 
       <h1 className={styles['header-title']}>

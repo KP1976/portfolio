@@ -1,5 +1,17 @@
 .projects {
   margin-top: 9.2rem;
+  position: relative;
+}
+
+.projects-flare {
+  background-color: var(--main-color);
+  filter: blur(110px);
+  border-radius: 50%;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 6.4rem;
+  width: 100%;
 }
 
 .projects-title {
@@ -12,4 +24,5 @@
   letter-spacing: 0.1em;
   margin: 0 0 3.6rem 0;
   text-transform: uppercase;
+  position: relative;
 }
