@@ -1,0 +1,9 @@
+.technology-list {
+  align-items: flex-end;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4.2rem;
+  list-style-type: none;
+  padding: 0;
+}

@@ -1,9 +1,10 @@
 import React from 'react';
-import styles from '../styles/ProjectsList.module.css';
 import { Project } from './Project';
 import todoProject from '../public/todo.jpg';
 import tilesProject from '../public/kafelki.jpg';
 import bakeryProject from '../public/cukiernia.jpg';
+
+import styles from '../styles/ProjectsList.module.css';
 
 export const ProjectsList = () => {
   return (

@@ -2,9 +2,10 @@ import React from 'react';
 import { Navigation } from './Navigation';
 import { Header } from './Header';
 import { Projects } from './Projects';
+import { Ubuntu } from '@next/font/google';
+import { AboutMe } from './AboutMe';
 
 import styles from '../styles/Home.module.css';
-import { Ubuntu } from '@next/font/google';
 
 const ubuntu = Ubuntu({ weight: ['300', '700'], subsets: ['latin'] });
 
@@ -14,6 +15,7 @@ const Home = () => {
       <Navigation />
       <Header />
       <Projects />
+      <AboutMe />
     </div>
   );
 };

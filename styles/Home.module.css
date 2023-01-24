@@ -1,6 +1,7 @@
 .container {
   padding: 1.6em 2.4em;
   min-height: 100vh;
+  overflow: hidden;
 }
 
 @media (max-width: 600px) {

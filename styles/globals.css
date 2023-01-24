@@ -28,3 +28,15 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.section-title {
+  align-items: center;
+  color: var(--main-color);
+  display: flex;
+  flex-direction: column;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin: 0 0 3.6rem 0;
+  text-transform: uppercase;
+}

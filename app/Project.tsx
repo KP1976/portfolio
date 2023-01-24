@@ -16,6 +16,7 @@ export const Project = ({ image, projectTitle, projectDescription }: Props) => {
         className={styles['project-image']}
         src={image}
         alt="ToDo application"
+        priority
       />
 
       <div className={styles['project-title-icon-container']}>
