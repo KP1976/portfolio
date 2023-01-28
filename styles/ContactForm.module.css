@@ -1,0 +1,46 @@
+.contact-form {
+  display: grid;
+  row-gap: 1.2rem;
+  margin-top: 4.6rem;
+  position: relative;
+}
+
+.contact-form-label-and-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form-label {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.contact-form-input,
+.contact-form-message {
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.contact-form-input {
+  height: 3.6rem;
+  padding: 0 1rem;
+}
+
+.contact-form-message {
+  height: 14.6rem;
+  padding: 1rem;
+  resize: none;
+}
+
+.contact-form-button {
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+  height: 4.3rem;
+  margin-top: 1.5rem;
+  text-transform: uppercase;
+}

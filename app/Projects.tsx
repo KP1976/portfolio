@@ -4,10 +4,10 @@ import { ProjectsList } from './ProjectsList';
 
 export const Projects = () => {
   return (
-    <div className={styles.projects}>
+    <section className={styles.projects}>
       <div className={styles['projects-flare']}></div>
       <h2 className="section-title">Projekty</h2>
       <ProjectsList />
-    </div>
+    </section>
   );
 };

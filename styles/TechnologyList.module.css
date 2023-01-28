@@ -3,7 +3,8 @@
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  gap: 4.2rem;
+  column-gap: 4.2rem;
+  row-gap: 2.4rem;
   list-style-type: none;
   padding: 0;
 }

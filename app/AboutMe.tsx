@@ -5,7 +5,7 @@ import styles from '../styles/AboutMe.module.css';
 
 export const AboutMe = () => {
   return (
-    <div className={styles['about-me']}>
+    <section className={styles['about-me']}>
       <h2 className="section-title">o mnie</h2>
 
       <p className={styles['about-me-description']}>
@@ -24,6 +24,6 @@ export const AboutMe = () => {
       </p>
 
       <TechnologyList />
-    </div>
+    </section>
   );
 };
