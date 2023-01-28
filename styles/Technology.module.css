@@ -1,6 +1,6 @@
 .technology-image {
+  aspect-ratio: auto;
   border-radius: 0.5rem;
-  width: auto;
   mix-blend-mode: luminosity;
   opacity: 30%;
 }
