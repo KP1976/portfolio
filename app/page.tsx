@@ -5,6 +5,7 @@ import { Projects } from './Projects';
 import { Ubuntu } from '@next/font/google';
 import { AboutMe } from './AboutMe';
 import { Contact } from './Contact';
+import { Footer } from './Footer';
 
 import styles from '../styles/Home.module.css';
 
@@ -18,6 +19,7 @@ const Home = () => {
       <Projects />
       <AboutMe />
       <Contact />
+      <Footer />
     </div>
   );
 };

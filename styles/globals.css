@@ -41,3 +41,9 @@ a {
   position: relative;
   text-transform: uppercase;
 }
+
+footer {
+  font-size: 1.4rem;
+  margin-top: 8.8rem;
+  text-align: center;
+}
