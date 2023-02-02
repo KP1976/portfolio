@@ -28,14 +28,18 @@ export const Header = () => {
       </p>
 
       <div className={styles.buttons}>
-        <button className={`${styles['cta-button']} ${ubuntu.className}`}>
+        <a
+          className={`${styles['cta-button']} ${ubuntu.className}`}
+          href="#projects"
+        >
           moje prace
-        </button>
-        <button
+        </a>
+        <a
           className={`${styles['cta-button']} ${styles['cta-button-second']} ${ubuntu.className}`}
+          href="#contact"
         >
           zatrudnij mnie
-        </button>
+        </a>
       </div>
     </header>
   );

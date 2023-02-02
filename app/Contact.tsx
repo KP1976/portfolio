@@ -10,7 +10,7 @@ import styles from '../styles/Contact.module.css';
 
 export const Contact = () => {
   return (
-    <section className={styles.contact}>
+    <section className={styles.contact} id="contact">
       <div className={styles['contact-flare']}></div>
       <h2 className="section-title">kontakt</h2>
       <h3 className={styles['contact-subtitle']}>
@@ -20,7 +20,9 @@ export const Contact = () => {
 
       <div className={styles['email-wrapper']}>
         <p className={styles['email-title']}>e-mail:</p>
-        <p className={styles.email}>kpawlowski1976@gmail.com</p>
+        <a className={styles.email} href="mailto:kpawlowski1976@gmail.com">
+          kpawlowski1976@gmail.com
+        </a>
       </div>
 
       <div className={styles['social-icons']}>
