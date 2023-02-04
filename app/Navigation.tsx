@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 import styles from '../styles/Navigation.module.css';
 
@@ -7,19 +8,19 @@ export const Navigation = () => {
       <span className={styles.logo}>kp1976</span>
       <ul className={styles.menu}>
         <li className={styles['menu-item']}>
-          <a className={styles['menu-item-link']} href="#about">
+          <Link className={styles['menu-item-link']} href="#about">
             O mnie
-          </a>
+          </Link>
         </li>
         <li className={styles['menu-item']}>
-          <a className={styles['menu-item-link']} href="#contact">
+          <Link className={styles['menu-item-link']} href="#contact">
             Kontakt
-          </a>
+          </Link>
         </li>
         <li className={styles['menu-item']}>
-          <a className={styles['menu-item-link']} href="#cv">
+          <Link className={styles['menu-item-link']} href="#cv">
             Moje CV
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>

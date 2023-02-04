@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { ContactForm } from './ContactForm';
 
 import facebookIcon from '../public/facebook.png';
@@ -20,9 +21,9 @@ export const Contact = () => {
 
       <div className={styles['email-wrapper']}>
         <p className={styles['email-title']}>e-mail:</p>
-        <a className={styles.email} href="mailto:kpawlowski1976@gmail.com">
+        <Link className={styles.email} href="mailto:kpawlowski1976@gmail.com">
           kpawlowski1976@gmail.com
-        </a>
+        </Link>
       </div>
 
       <div className={styles['social-icons']}>

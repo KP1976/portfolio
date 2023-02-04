@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from '../styles/Header.module.css';
 import Image from 'next/image';
+import Link from 'next/link';
 import headerPic from '../public/header.png';
 
 import { Ubuntu } from '@next/font/google';
@@ -28,18 +29,18 @@ export const Header = () => {
       </p>
 
       <div className={styles.buttons}>
-        <a
+        <Link
           className={`${styles['cta-button']} ${ubuntu.className}`}
           href="#projects"
         >
           moje prace
-        </a>
-        <a
+        </Link>
+        <Link
           className={`${styles['cta-button']} ${styles['cta-button-second']} ${ubuntu.className}`}
           href="#contact"
         >
           zatrudnij mnie
-        </a>
+        </Link>
       </div>
     </header>
   );

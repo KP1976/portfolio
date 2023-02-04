@@ -1,5 +1,7 @@
 import React from 'react';
 import Image, { StaticImageData } from 'next/image';
+import Link from 'next/link';
+
 import styles from '../styles/Project.module.css';
 import githubIcon from '../public/github.png';
 
@@ -21,7 +23,7 @@ export const Project = ({ image, projectTitle, projectDescription }: Props) => {
 
       <div className={styles['project-title-icon-container']}>
         <h3 className={styles['project-title']}>{projectTitle}</h3>
-        <a
+        <Link
           target="_blank"
           href="https://github.com/KP1976/TaskManager_frontend"
           rel="noopener noreferrer"
@@ -31,7 +33,7 @@ export const Project = ({ image, projectTitle, projectDescription }: Props) => {
             src={githubIcon}
             alt="Github"
           />
-        </a>
+        </Link>
       </div>
 
       <p className={styles['project-description']}>{projectDescription}</p>
