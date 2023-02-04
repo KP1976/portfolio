@@ -18,9 +18,13 @@ export const Navigation = () => {
           </Link>
         </li>
         <li className={styles['menu-item']}>
-          <Link className={styles['menu-item-link']} href="#cv">
+          <a
+            className={styles['menu-item-link']}
+            href="cv2023.pdf"
+            download={'cv2023.pdf'}
+          >
             Moje CV
-          </Link>
+          </a>
         </li>
       </ul>
     </nav>

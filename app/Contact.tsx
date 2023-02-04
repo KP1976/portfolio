@@ -28,8 +28,8 @@ export const Contact = () => {
 
       <div className={styles['social-icons']}>
         <Image src={facebookIcon} alt="facebook" height={40} width={40} />
-        <Image src={githubIcon} alt="facebook" height={40} width={40} />
-        <Image src={linkedinIcon} alt="facebook" height={40} width={40} />
+        <Image src={githubIcon} alt="github" height={40} width={40} />
+        <Image src={linkedinIcon} alt="linkedin" height={40} width={40} />
       </div>
 
       <ContactForm />
