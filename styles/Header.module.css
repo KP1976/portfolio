@@ -30,7 +30,8 @@
 }
 
 .header-image {
-  height: 17.5rem;
+  height: auto;
+  /* height: 17.5rem; */
   width: 20rem;
 }
 
