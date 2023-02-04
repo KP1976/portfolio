@@ -8,14 +8,14 @@ export const Navigation = () => {
       <span className={styles.logo}>kp1976</span>
       <ul className={styles.menu}>
         <li className={styles['menu-item']}>
-          <Link className={styles['menu-item-link']} href="#about">
+          <a className={styles['menu-item-link']} href="#about">
             O mnie
-          </Link>
+          </a>
         </li>
         <li className={styles['menu-item']}>
-          <Link className={styles['menu-item-link']} href="#contact">
+          <a className={styles['menu-item-link']} href="#contact">
             Kontakt
-          </Link>
+          </a>
         </li>
         <li className={styles['menu-item']}>
           <a
