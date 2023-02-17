@@ -7,7 +7,7 @@ export default function Head() {
         name="description"
         content="Portofolio Krzysztofa Pawłowskiego."
       ></meta>
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="/kp1976_logo.ico" />
     </>
   );
 }
