@@ -1,9 +1,11 @@
-import React from 'react';
 import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
+import React from 'react';
 
 import styles from '../styles/Project.module.css';
-import githubIcon from '../public/github.png';
+
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 interface Props {
   image: StaticImageData;
@@ -25,11 +27,7 @@ export const Project = ({
       <div className={styles['project-title-icon-container']}>
         <h3 className={styles['project-title']}>{projectTitle}</h3>
         <Link target="_blank" href={projectLink} rel="noopener noreferrer">
-          <Image
-            className={styles['project-icon']}
-            src={githubIcon}
-            alt="Github icon"
-          />
+          <FontAwesomeIcon icon={faGithub} color="#61DAFB" width={18} />
         </Link>
       </div>
 
