@@ -31,7 +31,6 @@
 
 .header-image {
   height: auto;
-  /* height: 17.5rem; */
   width: 20rem;
 }
 
@@ -80,4 +79,38 @@
   border: 1px solid var(--main-color);
   color: var(--main-color);
   width: 15.2rem;
+}
+
+@media only screen and (min-width: 576px) {
+  .header {
+    padding-top: 3rem;
+  }
+
+  .header-flare1 {
+    filter: blur(250px);
+    height: 28.7rem;
+    left: 12%;
+    top: -30%;
+    width: 28.7rem;
+  }
+
+  .header-flare2 {
+    filter: blur(200px);
+    height: 40.5rem;
+    width: 40.5rem;
+  }
+
+  .header-image {
+    width: 38rem;
+  }
+
+  .header-title {
+    margin: 3rem 0 2.4rem;
+    width: 85%;
+  }
+
+  .header-subtitle {
+    margin: 0 0 2.4rem 0;
+    width: 94%;
+  }
 }
