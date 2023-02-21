@@ -1,6 +1,24 @@
+.technology-list {
+  align-items: flex-end;
+  column-gap: 4.2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  row-gap: 2.4rem;
+}
+
 .technology-image {
   aspect-ratio: auto;
   border-radius: 0.5rem;
   mix-blend-mode: luminosity;
   opacity: 30%;
+}
+
+@media only screen and (min-width: 576px) {
+  .technology-list {
+    column-gap: 4.8rem;
+  }
 }

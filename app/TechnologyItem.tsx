@@ -1,5 +1,5 @@
-import React from 'react';
 import Image, { StaticImageData } from 'next/image';
+import React from 'react';
 
 import styles from '../styles/Technology.module.css';
 
@@ -9,9 +9,9 @@ interface Props {
   width?: number;
 }
 
-export const Technology = ({ image, height, width }: Props) => {
+export const TechnologyItem = ({ image, height, width }: Props) => {
   return (
-    <li>
+    <li className={styles['technology-item']}>
       <Image
         className={styles['technology-image']}
         src={image}
