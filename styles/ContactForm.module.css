@@ -1,8 +1,9 @@
 .contact-form {
   display: grid;
-  row-gap: 1.2rem;
+  grid-template-columns: 1fr;
   margin-top: 4.6rem;
   position: relative;
+  row-gap: 1.2rem;
 }
 
 .contact-form-label-and-input {
@@ -43,4 +44,15 @@
   height: 4.3rem;
   margin-top: 1.5rem;
   text-transform: uppercase;
+}
+
+@media only screen and (min-width: 576px) {
+  .contact-form {
+    justify-content: center;
+    grid-template-columns: 40rem;
+  }
+
+  .contact-form-button {
+    margin-top: 2.7rem;
+  }
 }

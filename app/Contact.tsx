@@ -1,6 +1,6 @@
-import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import React from 'react';
 import { ContactForm } from './ContactForm';
 
 import facebookIcon from '../public/facebook.png';
@@ -15,8 +15,8 @@ export const Contact = () => {
       <div className={styles['contact-flare']}></div>
       <h2 className="section-title">kontakt</h2>
       <h3 className={styles['contact-subtitle']}>
-        Masz do mnie jakieś pytania? Pisz pod poniższy adres lub skorzystaj z
-        formularza kontaktowego
+        Masz do mnie jakieś pytania? Pisz pod poniższy adres lub skorzystaj
+        z&nbsp;formularza kontaktowego
       </h3>
 
       <div className={styles['email-wrapper']}>

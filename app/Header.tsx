@@ -1,7 +1,7 @@
-import React from 'react';
-import styles from '../styles/Header.module.css';
 import Image from 'next/image';
+import React from 'react';
 import headerPic from '../public/header.png';
+import styles from '../styles/Header.module.css';
 
 import { Ubuntu } from '@next/font/google';
 
@@ -12,7 +12,12 @@ export const Header = () => {
     <header className={styles.header}>
       <div className={styles['header-flare1']}></div>
       <div className={styles['header-flare2']}></div>
-      <Image className={styles['header-image']} src={headerPic} alt="" />
+      <Image
+        className={styles['header-image']}
+        src={headerPic}
+        alt=""
+        priority
+      />
 
       <h1 className={styles['header-title']}>
         Chcesz zatrudnić junior front-end developera?
