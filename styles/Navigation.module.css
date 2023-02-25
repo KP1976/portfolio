@@ -29,3 +29,26 @@
 .menu-item-link {
   font-size: 1.4rem;
 }
+
+@media only screen and (min-width: 576px) {
+  .logo {
+    font-size: 3rem;
+  }
+
+  .menu {
+    gap: 0 4.8em;
+  }
+
+  .menu-item:last-child {
+    background-color: var(--main-color);
+    border-radius: 3rem;
+    color: black;
+    font-weight: 700;
+    padding: 1.2rem 2.4rem;
+    text-transform: uppercase;
+  }
+
+  .menu-item-link {
+    font-size: 1.8rem;
+  }
+}

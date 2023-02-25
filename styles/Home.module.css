@@ -4,10 +4,9 @@
   overflow: hidden;
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+@media only screen and (min-width: 576px) {
+  .container {
+    padding: 3.6em 4.8rem 4.8em;
   }
 }
 
