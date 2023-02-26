@@ -43,3 +43,9 @@
     width: calc(54vw);
   }
 }
+
+@media only screen and (min-width: 768px) {
+  .project {
+    width: calc(40vw);
+  }
+}

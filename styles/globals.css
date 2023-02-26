@@ -48,3 +48,10 @@ footer {
   margin-top: 9.2rem;
   text-align: center;
 }
+
+@media only screen and (min-width: 768px) {
+  .section-title {
+    display: block;
+    font-size: 2.6rem;
+  }
+}
