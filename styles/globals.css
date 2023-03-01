@@ -31,15 +31,13 @@ a {
 }
 
 .section-title {
-  align-items: center;
   color: var(--main-color);
-  display: flex;
-  flex-direction: column;
   font-size: 1.8rem;
   font-weight: 700;
   letter-spacing: 0.1em;
   margin: 0 0 3.6rem 0;
   position: relative;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -51,7 +49,7 @@ footer {
 
 @media only screen and (min-width: 768px) {
   .section-title {
-    display: block;
     font-size: 2.6rem;
+    text-align: left;
   }
 }

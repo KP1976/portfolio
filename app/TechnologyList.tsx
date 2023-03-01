@@ -14,14 +14,14 @@ import styles from '../styles/Technology.module.css';
 export const TechnologyList = () => {
   return (
     <ul className={styles['technology-list']}>
-      <TechnologyItem image={HTMLlogo} height={54} />
-      <TechnologyItem image={CSSlogo} height={54} />
-      <TechnologyItem image={JSlogo} height={54} />
-      <TechnologyItem image={SASSlogo} height={54} />
-      <TechnologyItem image={Reactlogo} height={54} />
-      <TechnologyItem image={NODEJSlogo} height={54} />
-      <TechnologyItem image={MYSQLlogo} height={54} />
-      <TechnologyItem image={NEXTJSlogo} height={24} />
+      <TechnologyItem image={HTMLlogo} />
+      <TechnologyItem image={CSSlogo} />
+      <TechnologyItem image={JSlogo} />
+      <TechnologyItem image={SASSlogo} />
+      <TechnologyItem image={Reactlogo} />
+      <TechnologyItem image={NODEJSlogo} />
+      <TechnologyItem image={MYSQLlogo} />
+      <TechnologyItem image={NEXTJSlogo} />
     </ul>
   );
 };

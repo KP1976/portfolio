@@ -5,20 +5,12 @@ import styles from '../styles/Technology.module.css';
 
 interface Props {
   image: StaticImageData;
-  height?: number;
-  width?: number;
 }
 
-export const TechnologyItem = ({ image, height, width }: Props) => {
+export const TechnologyItem = ({ image }: Props) => {
   return (
     <li className={styles['technology-item']}>
-      <Image
-        className={styles['technology-image']}
-        src={image}
-        height={height}
-        width={width}
-        alt=""
-      />
+      <Image className={styles['technology-image']} src={image} alt="" />
     </li>
   );
 };
