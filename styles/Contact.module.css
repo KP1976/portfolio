@@ -57,3 +57,45 @@
     width: 100%;
   }
 }
+
+@media only screen and (min-width: 768px) {
+  .contact {
+    display: grid;
+    grid-template-columns: 0.945fr 1.055fr;
+    grid-template-rows: repeat(5, auto);
+    gap: 3.2rem 3.5rem;
+    margin-top: 11.6rem;
+    position: relative;
+  }
+
+  .contact-subtitle {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    margin: 0;
+    text-align: left;
+    width: 100%;
+  }
+
+  .email-wrapper {
+    align-items: start;
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+
+  .email-title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .email {
+    font-size: 1.6rem;
+    margin-bottom: 0;
+  }
+
+  .social-icons {
+    column-gap: 4.45rem;
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    justify-content: flex-start;
+  }
+}

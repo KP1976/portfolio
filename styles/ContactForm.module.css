@@ -3,7 +3,7 @@
   grid-template-columns: 1fr;
   margin-top: 4.6rem;
   position: relative;
-  row-gap: 1.2rem;
+  gap: 1.2rem 0;
 }
 
 .contact-form-label-and-input {
@@ -48,11 +48,30 @@
 
 @media only screen and (min-width: 576px) {
   .contact-form {
-    justify-content: center;
     grid-template-columns: 40rem;
+    justify-content: center;
   }
 
   .contact-form-button {
     margin-top: 2.7rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .contact-form {
+    gap: 1.6rem 0;
+    grid-column: 2 / 3;
+    grid-row: 2 / -1;
+    grid-template-columns: auto;
+    justify-content: inherit;
+    margin-top: 0;
+  }
+
+  .contact-form-input {
+    height: 4.2rem;
+  }
+
+  .contact-form-message {
+    height: 21rem;
   }
 }

@@ -52,4 +52,9 @@ footer {
     font-size: 2.6rem;
     text-align: left;
   }
+
+  #contact .section-title {
+    grid-column: 1 / -1;
+    margin: 0;
+  }
 }
