@@ -57,4 +57,10 @@ footer {
     grid-column: 1 / -1;
     margin: 0;
   }
+
+  footer {
+    font-size: 1.6rem;
+    margin-top: 11.6rem;
+    text-align: left;
+  }
 }
