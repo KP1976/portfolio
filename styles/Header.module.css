@@ -31,6 +31,7 @@
 
 .header-image {
   height: auto;
+  position: relative;
   width: 20rem;
 }
 
@@ -178,6 +179,62 @@
 
   .cta-button-second {
     border: 2px solid var(--main-color);
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .header {
+    row-gap: 3.6rem;
+  }
+
+  .header-flare1 {
+    filter: blur(200px);
+    height: 48.2rem;
+    left: 12%;
+    top: -100%;
+    width: 48.2rem;
+  }
+
+  .header-flare2 {
+    height: 48.4rem;
+    right: -28%;
+    top: 10%;
+    width: 48.4rem;
+  }
+
+  .header-image {
+    width: 40rem;
+  }
+
+  .header-title {
+    font-size: 5.2rem;
+  }
+
+  .header-title-strong {
+    line-height: 1;
+  }
+
+  .header-subtitle {
+    font-size: 1.8rem;
+    width: 91%;
+  }
+
+  .buttons {
+    gap: 3.2rem;
+    margin-top: 2.4rem;
+  }
+
+  .cta-button {
+    font-size: 1.8rem;
+    height: 5.2rem;
+    line-height: 1.8rem;
+    padding: 1.6rem;
+    width: auto;
+  }
+
+  .cta-button-second {
+    line-height: 1.6rem;
     width: auto;
   }
 }
