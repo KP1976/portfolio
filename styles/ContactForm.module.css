@@ -81,3 +81,23 @@
     font-size: 1.8rem;
   }
 }
+
+@media only screen and (min-width: 1200px) {
+  .contact-form {
+    gap: 2.4rem 0;
+  }
+
+  .contact-form-label {
+    font-size: 2rem;
+  }
+
+  .contact-form-input {
+    height: 4.8rem;
+  }
+
+  .contact-form-button {
+    font-size: 1.8rem;
+    height: 4.8rem;
+    margin-top: 2.2rem;
+  }
+}

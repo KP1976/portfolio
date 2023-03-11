@@ -52,6 +52,11 @@
   position: relative;
 }
 
+.social-icon {
+  height: 4rem;
+  width: 4rem;
+}
+
 @media only screen and (min-width: 576px) {
   .contact-subtitle {
     width: 100%;
@@ -108,5 +113,34 @@
 
   .contact-subtitle {
     font-size: 1.8rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .contact {
+    gap: 6rem 9.6rem;
+    margin-top: 19.6rem;
+  }
+
+  .contact-flare {
+    filter: blur(200px);
+    height: 88%;
+    left: 50%;
+    top: 12%;
+    transform: translateX(-50%);
+    width: 53.5%;
+  }
+
+  .contact-subtitle {
+    font-size: 2rem;
+  }
+
+  .email-title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .social-icons {
+    margin-top: -2.8rem;
   }
 }
