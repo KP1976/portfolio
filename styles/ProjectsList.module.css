@@ -23,3 +23,10 @@
     justify-content: space-evenly;
   }
 }
+
+@media only screen and (min-width: 992px) {
+  .projects-list {
+    grid-template-columns: repeat(auto-fit, 42.4rem);
+    justify-content: space-evenly;
+  }
+}

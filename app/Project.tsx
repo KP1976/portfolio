@@ -27,7 +27,11 @@ export const Project = ({
       <div className={styles['project-title-icon-container']}>
         <h3 className={styles['project-title']}>{projectTitle}</h3>
         <Link target="_blank" href={projectLink} rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faGithub} color="#61DAFB" width={18} />
+          <FontAwesomeIcon
+            className={styles['project-icon']}
+            icon={faGithub}
+            color="#61DAFB"
+          />
         </Link>
       </div>
 

@@ -36,3 +36,30 @@
   line-height: 120%;
   margin: 1.2rem 0 0 0;
 }
+
+@media only screen and (min-width: 992px) {
+  .project {
+    border-radius: 3em;
+    padding: 3.6em;
+  }
+
+  .project-image {
+    border-radius: 3em;
+    height: max-content;
+    margin-bottom: 3.6em;
+  }
+
+  .project-title {
+    font-size: 2.6rem;
+  }
+
+  .project-icon {
+    height: 2.6rem;
+    width: 2.6rem;
+  }
+
+  .project-description {
+    font-size: 1.8rem;
+    margin: 1.6rem 0 0 0;
+  }
+}
