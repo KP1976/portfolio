@@ -72,3 +72,26 @@
     width: 11.7rem;
   }
 }
+
+@media only screen and (min-width: 1200px) {
+  .technology-list {
+    column-gap: 6.4rem;
+  }
+
+  .technology-image {
+    height: 5.4rem;
+    width: 5.4rem;
+  }
+
+  .technology-list li:last-child .technology-image {
+    width: 12.2rem;
+  }
+
+  .technology-list li:nth-last-child(2) .technology-image {
+    width: 10.6rem;
+  }
+
+  .technology-list li:nth-last-child(3) .technology-image {
+    width: 11.1rem;
+  }
+}
