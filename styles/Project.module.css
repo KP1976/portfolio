@@ -63,3 +63,29 @@
     margin: 1.6rem 0 0 0;
   }
 }
+
+@media only screen and (min-width: 1200px) {
+  .project {
+    border-radius: 2.4em;
+    padding: 2.4em;
+  }
+
+  .project-image {
+    border-radius: 2.43em;
+    height: max-content;
+    margin-bottom: 3.6em;
+  }
+
+  .project-title {
+    font-size: 1.86rem;
+  }
+
+  .project-icon {
+    height: 1.8em;
+    width: 1.8em;
+  }
+
+  .project-description {
+    font-size: 1.6rem;
+  }
+}
