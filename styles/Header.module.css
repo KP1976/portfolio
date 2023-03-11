@@ -238,3 +238,41 @@
     width: auto;
   }
 }
+
+@media only screen and (min-width: 992px) {
+  .header-flare1 {
+    height: 57.8rem;
+    width: 57.8rem;
+  }
+
+  .header-flare2 {
+    height: 53.6rem;
+    width: 53.6rem;
+  }
+
+  .header-image {
+    margin-top: 1.4rem;
+    width: 47.4rem;
+  }
+
+  .header-title {
+    font-size: 6rem;
+  }
+
+  .header-subtitle {
+    font-size: 2rem;
+    line-height: 1.6;
+  }
+
+  .buttons {
+    gap: 3.6rem;
+    margin-top: 0;
+  }
+
+  .cta-button {
+    font-size: 2.2rem;
+    height: 6.2rem;
+    line-height: 2.3rem;
+    padding: 1.8rem 2.4rem;
+  }
+}
