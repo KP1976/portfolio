@@ -82,3 +82,9 @@ footer {
     margin: 0 0 6rem 0;
   }
 }
+
+@media only screen and (min-width: 1200px) {
+  footer {
+    margin-top: 19.6rem;
+  }
+}
