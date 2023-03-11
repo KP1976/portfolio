@@ -61,11 +61,10 @@
 @media only screen and (min-width: 768px) {
   .contact {
     display: grid;
+    gap: 3.2rem 3.5rem;
     grid-template-columns: 0.945fr 1.055fr;
     grid-template-rows: repeat(5, auto);
-    gap: 3.2rem 3.5rem;
     margin-top: 11.6rem;
-    position: relative;
   }
 
   .contact-subtitle {
@@ -97,5 +96,17 @@
     grid-column: 1 / 2;
     grid-row: 4 / 5;
     justify-content: flex-start;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .contact {
+    gap: 3.6rem 4.9rem;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 12rem;
+  }
+
+  .contact-subtitle {
+    font-size: 1.8rem;
   }
 }
