@@ -55,4 +55,20 @@
   .technology-list li:nth-last-child(2) .technology-image {
     width: 9.5rem;
   }
+
+  .technology-list li:nth-last-child(3) .technology-image {
+    width: 10rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .technology-list {
+    align-items: center;
+    column-gap: 4.7rem;
+  }
+
+  .technology-list li:last-child .technology-image {
+    height: 2.4rem;
+    width: 11.7rem;
+  }
 }
