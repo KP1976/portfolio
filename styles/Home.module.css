@@ -4,15 +4,120 @@
   overflow: hidden;
 }
 
+.flare1 {
+  background-color: rgba(221, 120, 127, 0.3);
+  filter: blur(110px);
+  border-radius: 50%;
+  height: 17.8rem;
+  left: 20%;
+  position: absolute;
+  top: calc(-17.8rem / 2);
+  width: 17.8rem;
+}
+
+.flare2 {
+  background-color: rgba(122, 171, 214, 0.3);
+  filter: blur(110px);
+  border-radius: 50%;
+  height: 25.9rem;
+  right: -28%;
+  position: absolute;
+  top: 11%;
+  width: 25.9rem;
+}
+
+@media only screen and (min-width: 576px) {
+  .flare1 {
+    height: 28.7rem;
+    left: 15%;
+    top: calc(-28.7rem / 3);
+    width: 28.7rem;
+  }
+
+  .flare2 {
+    filter: blur(200px);
+    height: 40.5rem;
+    right: -34%;
+    top: 8%;
+    width: 40.5rem;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .container {
     padding: 3.6rem 4.8rem 4.8rem;
+  }
+
+  .flare1 {
+    height: 33.7rem;
+    left: 20%;
+    top: -20rem;
+    width: 33.7rem;
+  }
+
+  .flare2 {
+    height: 40rem;
+    right: -20%;
+    top: 17%;
+    width: 40rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .flare1 {
+    height: 48.2rem;
+    left: 16%;
+    top: -31rem;
+    width: 48.2rem;
+  }
+
+  .flare2 {
+    height: 48.4rem;
+    right: -22%;
+    top: 15%;
+    width: 48.4rem;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .container {
     padding: 4.6rem 6rem 6em;
+  }
+
+  .flare1 {
+    height: 57.8rem;
+    left: 17%;
+    top: -42rem;
+    width: 57.8rem;
+  }
+
+  .flare2 {
+    height: 53.6rem;
+    right: -21%;
+    top: 17%;
+    width: 53.6rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .container {
+    max-width: 144rem;
+    margin: 0 auto;
+    padding: 5.2rem 6.4rem 6.4em;
+  }
+
+  .flare1 {
+    height: 84.2rem;
+    left: 14%;
+    top: -68rem;
+    width: 84.2rem;
+  }
+
+  .flare2 {
+    height: 59.2rem;
+    right: -21%;
+    top: 25%;
+    width: 59.2rem;
   }
 }
 
