@@ -101,3 +101,35 @@
     margin-top: 2.2rem;
   }
 }
+
+@media only screen and (min-width: 1440px) {
+  .contact-form {
+    grid-template-columns: 27.8rem 39rem;
+    gap: 6.5rem 4.8rem;
+  }
+
+  .contact-form .contact-form-label-and-input:nth-child(3) {
+    grid-column: 1 / -1;
+    margin-top: -4.1rem;
+  }
+
+  .contact-form-label {
+    font-size: 2.4rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .contact-form-input {
+    height: 5.6rem;
+  }
+
+  .contact-form-message {
+    height: 26rem;
+  }
+
+  .contact-form-button {
+    font-size: 2rem;
+    grid-column: 1 / -1;
+    height: 5.6rem;
+    margin-top: 0;
+  }
+}
