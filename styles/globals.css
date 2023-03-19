@@ -82,10 +82,15 @@ footer {
     font-size: 3.2rem;
     margin: 0 0 6rem 0;
   }
-}
 
-@media only screen and (min-width: 1200px) {
   footer {
     margin-top: 19.6rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .section-title {
+    font-size: 4rem;
+    margin: 0 0 7.2rem 0;
   }
 }

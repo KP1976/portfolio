@@ -23,6 +23,7 @@
 }
 
 .project-icon {
+  display: inline-block;
   height: 1.8em;
   width: 1.8em;
 }
@@ -71,13 +72,11 @@
   }
 
   .project-image {
-    border-radius: 2.43em;
-    height: max-content;
-    margin-bottom: 3.6em;
+    border-radius: 2.4em;
   }
 
   .project-title {
-    font-size: 1.86rem;
+    font-size: 1.8rem;
   }
 
   .project-icon {
@@ -87,5 +86,24 @@
 
   .project-description {
     font-size: 1.6rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .project {
+    padding: 3.2em;
+  }
+
+  .project-image {
+    margin-bottom: 3.2em;
+  }
+
+  .project-icon {
+    height: 2.2em;
+    width: 2.2em;
+  }
+
+  .project-description {
+    margin: 2.4rem 0 0 0;
   }
 }
