@@ -97,4 +97,9 @@ footer {
     font-size: 4rem;
     margin: 0 0 7.2rem 0;
   }
+
+  footer {
+    font-size: 2rem;
+    margin-top: 20rem;
+  }
 }
