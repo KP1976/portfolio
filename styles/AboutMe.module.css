@@ -5,7 +5,7 @@
 .about-me-description {
   font-size: 1.6rem;
   line-height: 140%;
-  margin-bottom: 3.6rem;
+  margin: 0 0 3.6rem 0;
   padding: 0 1.42em;
   text-align: center;
 }
@@ -44,6 +44,18 @@
   .about-me-description {
     font-size: 2rem;
     line-height: 160%;
-    margin-bottom: 6rem;
+    margin: 0 0 6rem 0;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .about-me {
+    margin-top: 20rem;
+  }
+
+  .about-me-description {
+    font-size: 2.4rem;
+    margin: 0 0 7.2rem 0;
+    width: 78%;
   }
 }
