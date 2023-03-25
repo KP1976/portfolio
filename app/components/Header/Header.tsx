@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
-import headerPic from '../public/header.png';
-import styles from '../styles/Header.module.css';
+import headerPic from '../../../public/header.png';
+import styles from '../../../styles/Header.module.css';
 
 import { Ubuntu } from '@next/font/google';
 

@@ -3,11 +3,11 @@ import Link from 'next/link';
 import React from 'react';
 import { ContactForm } from './ContactForm';
 
-import facebookIcon from '../public/facebook.png';
-import githubIcon from '../public/github.png';
-import linkedinIcon from '../public/linkedin.png';
+import facebookIcon from '../../../public/facebook.png';
+import githubIcon from '../../../public/github.png';
+import linkedinIcon from '../../../public/linkedin.png';
 
-import styles from '../styles/Contact.module.css';
+import styles from '../../../styles/Contact.module.css';
 
 export const Contact = () => {
   return (

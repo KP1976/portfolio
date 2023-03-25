@@ -1,11 +1,12 @@
 import { Ubuntu } from '@next/font/google';
 import React from 'react';
-import { AboutMe } from './AboutMe';
-import { Contact } from './Contact';
+
+import { AboutMe } from './components/AboutMe/AboutMe';
+import { Contact } from './components/Contact/Contact';
+import { Header } from './components/Header/Header';
+import { Navigation } from './components/Navigation/Navigation';
+import { Projects } from './components/Projects/Projects';
 import { Footer } from './Footer';
-import { Header } from './Header';
-import { Navigation } from './Navigation';
-import { Projects } from './Projects';
 
 import styles from '../styles/Home.module.css';
 

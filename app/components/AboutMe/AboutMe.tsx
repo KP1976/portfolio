@@ -1,7 +1,7 @@
 import React from 'react';
 import { TechnologyList } from './TechnologyList';
 
-import styles from '../styles/AboutMe.module.css';
+import styles from '../../../styles/AboutMe.module.css';
 
 export const AboutMe = () => {
   return (
