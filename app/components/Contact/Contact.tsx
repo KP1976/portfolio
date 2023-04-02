@@ -20,7 +20,7 @@ export const Contact = () => {
       </h3>
 
       <div className={styles['email-wrapper']}>
-        <p className={styles['email-title']}>e-mail:</p>
+        <h4 className={styles['email-title']}>e-mail:</h4>
         <Link className={styles.email} href="mailto:kpawlowski1976@gmail.com">
           kpawlowski1976@gmail.com
         </Link>

@@ -31,6 +31,7 @@ export const Project = ({
             className={styles['project-icon']}
             icon={faGithub}
             color="#61DAFB"
+            title='github'
           />
         </Link>
       </div>

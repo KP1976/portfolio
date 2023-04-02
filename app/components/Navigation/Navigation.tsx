@@ -21,6 +21,8 @@ export const Navigation = () => {
             className={styles['menu-item-link']}
             href="cv2023.pdf"
             download={'cv2023.pdf'}
+            target="_blank"
+            title="CV - PDF format file"
           >
             Moje CV
           </a>
