@@ -1,11 +1,13 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { ContactForm } from './ContactForm';
 
-import facebookIcon from '../../../public/facebook.png';
-import githubIcon from '../../../public/github.png';
-import linkedinIcon from '../../../public/linkedin.png';
+import {
+  faFacebook,
+  faGithub,
+  faLinkedin,
+} from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import styles from '../../../styles/Contact.module.css';
 
@@ -27,21 +29,42 @@ export const Contact = () => {
       </div>
 
       <div className={styles['social-icons']}>
-        <Image
-          className={styles['social-icon']}
-          src={facebookIcon}
-          alt="facebook"
-        />
-        <Image
-          className={styles['social-icon']}
-          src={githubIcon}
-          alt="github"
-        />
-        <Image
-          className={styles['social-icon']}
-          src={linkedinIcon}
-          alt="linkedin"
-        />
+        <Link
+          target="_blank"
+          href="https://www.facebook.com/KP1976PL"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon
+            className={styles['social-icon']}
+            icon={faFacebook}
+            color="#FFFFFF"
+            title="facebook"
+          />
+        </Link>
+        <Link
+          target="_blank"
+          href="https://github.com/KP1976"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon
+            className={styles['social-icon']}
+            icon={faGithub}
+            color="#FFFFFF"
+            title="github"
+          />
+        </Link>
+        <Link
+          target="_blank"
+          href="https://www.linkedin.com/in/krzysztof-paw%C5%82owski-74aa01154/"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon
+            className={styles['social-icon']}
+            icon={faLinkedin}
+            color="#FFFFFF"
+            title="linkedin"
+          />
+        </Link>
       </div>
 
       <ContactForm />
