@@ -13,19 +13,21 @@ export const ProjectsList = () => {
         image={todoProject}
         projectTitle="Aplikacja TO-DO"
         projectDescription="Full-stackowa aplikacja do zarządzania zadaniami."
-        projectLink="https://github.com/KP1976/TaskManager_frontend"
+        projectGithubLink="https://github.com/KP1976/TaskManager_frontend"
       />
       <Project
         image={tilesProject}
         projectTitle="Gra w kafelki"
         projectDescription="Gra, w której odkrywamy kolejno dwa pasujące kolorami do siebie kafelki."
-        projectLink="https://github.com/KP1976/kafelki"
+        projectGithubLink="https://github.com/KP1976/kafelki"
+        projectLink="https://kp1976.github.io/kafelki"
       />
       <Project
         image={bakeryProject}
         projectTitle="Cukiernia"
         projectDescription="Sklep internetowy, w którym możemy zakupić różnego rodzaju ciastka."
-        projectLink="https://github.com/KP1976/BAKERY_SHOP"
+        projectGithubLink="https://github.com/KP1976/BAKERY_SHOP"
+        projectLink="https://kp1976.github.io/BAKERY_SHOP"
       />
     </ul>
   );
