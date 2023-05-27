@@ -1,8 +1,8 @@
 import React from 'react';
 import { Project } from './Project';
-import { projects } from '../../database/projects';
+import { projects } from '@database/projects';
 
-import styles from '../../../styles/ProjectsList.module.css';
+import styles from '@styles/ProjectsList.module.css';
 
 export const ProjectsList = () => {
   return (

@@ -9,7 +9,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import styles from '../../../styles/Contact.module.css';
+import styles from '@styles/Contact.module.css';
 
 export const Contact = () => {
   return (

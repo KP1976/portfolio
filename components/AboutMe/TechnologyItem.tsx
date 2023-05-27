@@ -1,7 +1,7 @@
 import Image, { StaticImageData } from 'next/image';
 import React from 'react';
 
-import styles from '../../../styles/Technology.module.css';
+import styles from '@styles/Technology.module.css';
 
 interface Props {
   image: StaticImageData;

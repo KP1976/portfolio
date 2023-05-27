@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from '../../../styles/ContactForm.module.css';
+import styles from '@styles/ContactForm.module.css';
 
 import { Ubuntu } from '@next/font/google';
 

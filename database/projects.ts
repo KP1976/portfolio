@@ -1,6 +1,6 @@
-import bakeryProject from '../../public/cukiernia.jpg';
-import tilesProject from '../../public/kafelki.jpg';
-import todoProject from '../../public/todo.jpg';
+import bakeryProject from '@public/cukiernia.jpg';
+import tilesProject from '@public/kafelki.jpg';
+import todoProject from '@public/todo.jpg';
 
 export const projects = [
   {
