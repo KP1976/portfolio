@@ -1,0 +1,109 @@
+.project {
+  background-color: var(--background-project-color);
+  border-radius: 2.4em;
+  padding: 3.2em;
+}
+
+.project-image {
+  border-radius: 2.4em;
+  height: auto;
+  margin-bottom: 2.4em;
+  width: 100%;
+}
+
+.project-title-icon-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-title {
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+.project-icon {
+  display: inline-block;
+  height: 1.8em;
+  width: 1.8em;
+}
+
+.fa-github {
+  display: block;
+}
+
+.project-description {
+  font-size: 1.4rem;
+  line-height: 120%;
+  margin: 1.2rem 0 0 0;
+}
+
+@media only screen and (min-width: 992px) {
+  .project {
+    border-radius: 3em;
+    padding: 3.6em;
+  }
+
+  .project-image {
+    border-radius: 3em;
+    height: max-content;
+    margin-bottom: 3.6em;
+  }
+
+  .project-title {
+    font-size: 2.6rem;
+  }
+
+  .project-icon {
+    height: 2.6em;
+    width: 2.6em;
+  }
+
+  .project-description {
+    font-size: 1.8rem;
+    margin: 1.6rem 0 0 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .project {
+    border-radius: 2.4em;
+    padding: 2.4em;
+  }
+
+  .project-image {
+    border-radius: 2.4em;
+  }
+
+  .project-title {
+    font-size: 1.8rem;
+  }
+
+  .project-icon {
+    height: 1.8em;
+    width: 1.8em;
+  }
+
+  .project-description {
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .project {
+    padding: 3.2em;
+  }
+
+  .project-image {
+    margin-bottom: 3.2em;
+  }
+
+  .project-icon {
+    height: 2.2em;
+    width: 2.2em;
+  }
+
+  .project-description {
+    margin: 2.4rem 0 0 0;
+  }
+}

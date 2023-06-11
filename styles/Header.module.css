@@ -1,0 +1,234 @@
+.header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 2.5rem;
+  position: relative;
+}
+
+.header-image {
+  height: auto;
+  position: relative;
+  width: 20rem;
+}
+
+.header-title {
+  font-size: 3.2rem;
+  margin: 1.6rem 0 2.5rem;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.header-title-strong {
+  color: var(--main-color);
+  line-height: 1.4;
+}
+
+.header-subtitle {
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 1.4;
+  margin: 0 0 2.5rem 0;
+  width: 99.9%;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.6rem;
+  width: 100%;
+}
+
+.cta-button {
+  background-color: var(--main-color);
+  border: none;
+  border-radius: 2rem;
+  color: var(--secondary-text-color);
+  font-size: 1.4rem;
+  height: 4.1rem;
+  line-height: 1.2;
+  padding: 1.2rem 1.6rem;
+  text-transform: uppercase;
+  width: 12.1rem;
+}
+
+.cta-button-second {
+  background-color: transparent;
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+  width: 15.2rem;
+}
+
+@media only screen and (min-width: 576px) {
+  .header {
+    padding-top: 3rem;
+  }
+
+  .header-image {
+    width: 38rem;
+  }
+
+  .header-title {
+    margin: 3rem 0 2.4rem;
+    width: 85%;
+  }
+
+  .header-subtitle {
+    margin: 0 0 2.4rem 0;
+    width: 94%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+    align-items: start;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    padding-top: 4.8rem;
+    position: relative;
+    row-gap: 3rem;
+  }
+
+  .header-image {
+    grid-column: 2 / 3;
+    grid-row: 1 / -1;
+    justify-self: end;
+    width: 29.5rem;
+  }
+
+  .header-title {
+    font-size: 3.8rem;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin: 0;
+    text-align: left;
+    width: 100%;
+  }
+
+  .header-subtitle {
+    margin: 0;
+    text-align: left;
+    width: 100%;
+  }
+
+  .buttons {
+    justify-content: flex-start;
+    gap: 2.4rem;
+  }
+
+  .cta-button {
+    border-radius: 5rem;
+    font-size: 1.6rem;
+    height: 4.3rem;
+    line-height: 1.6rem;
+    width: 13.4rem;
+  }
+
+  .cta-button-second {
+    border: 2px solid var(--main-color);
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .header {
+    row-gap: 3.6rem;
+  }
+
+  .header-image {
+    width: 40rem;
+  }
+
+  .header-title {
+    font-size: 5.2rem;
+  }
+
+  .header-title-strong {
+    line-height: 1;
+  }
+
+  .header-subtitle {
+    font-size: 1.8rem;
+    width: 91%;
+  }
+
+  .buttons {
+    gap: 3.2rem;
+    margin-top: 2.4rem;
+  }
+
+  .cta-button {
+    font-size: 1.8rem;
+    height: 5.2rem;
+    line-height: 1.8rem;
+    padding: 1.6rem;
+    width: auto;
+  }
+
+  .cta-button-second {
+    line-height: 1.6rem;
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .header-image {
+    margin-top: 1.4rem;
+    width: 47.4rem;
+  }
+
+  .header-title {
+    font-size: 6rem;
+  }
+
+  .header-subtitle {
+    font-size: 2rem;
+    line-height: 1.6;
+  }
+
+  .buttons {
+    gap: 3.6rem;
+    margin-top: 0;
+  }
+
+  .cta-button {
+    font-size: 2.2rem;
+    height: 6.2rem;
+    line-height: 2.3rem;
+    padding: 1.8rem 2.4rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .header {
+    padding-top: 7.8rem;
+    row-gap: 6rem;
+  }
+
+  .header-image {
+    margin-top: 1.4rem;
+    width: 56.7rem;
+  }
+
+  .header-title {
+    font-size: 7.2rem;
+  }
+
+  .header-subtitle {
+    font-size: 2.4rem;
+    width: 90%;
+  }
+
+  .buttons {
+    gap: 4.8rem;
+  }
+
+  .cta-button {
+    font-size: 2.4rem;
+    height: 8rem;
+    line-height: 3rem;
+    padding: 2.5rem 3.6rem;
+  }
+}
