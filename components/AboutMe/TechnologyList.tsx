@@ -1,7 +1,7 @@
 import React from 'react';
 
-import HTMLlogo from '@public/html5_logo.svg';
-import CSSlogo from '@public/css3_logo.svg';
+import HTMLlogo from '@public/HTML5_logo.svg';
+import CSSlogo from '@public/CSS3_logo.svg';
 import JSlogo from '@public/JavaScript_logo.svg';
 import SASSlogo from '@public/Sass_logo.svg';
 import Reactlogo from '@public/React_logo.svg';
