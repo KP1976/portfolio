@@ -15,9 +15,9 @@ const ubuntu = Ubuntu({ weight: ['300', '700'], subsets: ['latin'] });
 const Home = () => {
   return (
     <>
-      <div className={styles['flare1']}></div>
-      <div className={styles['flare2']}></div>
       <div className={`${ubuntu.className} ${styles.container}`}>
+        <div className={styles['flare1']}></div>
+        <div className={styles['flare2']}></div>
         <Navigation />
         <Header />
         <Projects />

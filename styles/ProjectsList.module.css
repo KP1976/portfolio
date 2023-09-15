@@ -1,7 +1,7 @@
 .projects-list {
   align-items: center;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 31.2rem);
+  grid-template-columns: repeat(auto-fit, 32.8rem);
   justify-content: center;
   gap: 3.2em;
   list-style: none;

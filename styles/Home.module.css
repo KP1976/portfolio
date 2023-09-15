@@ -1,6 +1,7 @@
 .container {
-  padding: 1.6em 2.4em;
+  padding: 1.6em;
   min-height: 100vh;
+  position: relative;
   overflow: hidden;
 }
 

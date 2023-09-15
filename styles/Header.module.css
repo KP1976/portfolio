@@ -3,34 +3,32 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 2.5rem;
+  padding-top: 3.2rem;
   position: relative;
 }
 
 .header-image {
   height: auto;
   position: relative;
-  width: 20rem;
+  width: 21.5rem;
 }
 
 .header-title {
   font-size: 3.2rem;
-  margin: 1.6rem 0 2.5rem;
+  margin: 2.4rem 0;
   text-align: center;
   line-height: 1.2;
 }
 
 .header-title-strong {
   color: var(--main-color);
-  line-height: 1.4;
 }
 
 .header-subtitle {
   font-size: 1.6rem;
   text-align: center;
   line-height: 1.4;
-  margin: 0 0 2.5rem 0;
-  width: 99.9%;
+  margin: 0 0 2.4rem 0;
 }
 
 .buttons {
@@ -44,7 +42,7 @@
   background-color: var(--main-color);
   border: none;
   border-radius: 2rem;
-  color: var(--secondary-text-color);
+  color: var(--background-color);
   font-size: 1.4rem;
   height: 4.1rem;
   line-height: 1.2;
