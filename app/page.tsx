@@ -20,10 +20,10 @@ const Home = () => {
         <div className={styles['flare2']}></div>
         <Navigation />
         <Header />
-        <Projects />
-        <AboutMe />
-        <Contact />
-        <Footer />
+        {/* <Projects /> */}
+        {/* <AboutMe /> */}
+        {/* <Contact /> */}
+        {/* <Footer /> */}
       </div>
     </>
   );

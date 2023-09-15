@@ -80,6 +80,10 @@
 }
 
 @media only screen and (min-width: 1440px) {
+  .menu {
+    gap: 0 9.6em;
+  }
+
   .logo {
     font-size: 4rem;
   }
