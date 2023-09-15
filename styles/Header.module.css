@@ -95,7 +95,7 @@
     grid-column: 2 / 3;
     grid-row: 1 / -1;
     justify-self: end;
-    width: 29.5rem;
+    width: 35.3rem;
   }
 
   .header-title {
@@ -118,14 +118,6 @@
     justify-content: flex-start;
     gap: 2.4rem;
     padding: 2.6rem 0 0 0;
-  }
-
-  .cta-button {
-    border-radius: 5rem;
-    font-size: 1.6rem;
-    height: 4.3rem;
-    line-height: 1.6rem;
-    width: 13.4rem;
   }
 
   .cta-button-second {
@@ -162,6 +154,7 @@
   }
 
   .cta-button {
+    border-radius: 5rem;
     font-size: 1.8rem;
     height: 5.2rem;
     line-height: 1.8rem;
@@ -195,15 +188,19 @@
   }
 
   .buttons {
-    gap: 3.6rem;
+    gap: 4rem;
     margin-top: 0;
   }
 
   .cta-button {
     font-size: 2.2rem;
-    height: 6.2rem;
-    line-height: 2.3rem;
-    padding: 1.8rem 2.4rem;
+    height: 5.8rem;
+    line-height: 2.6rem;
+    padding: 1.6rem 2.4rem;
+  }
+
+  .cta-button-second {
+    line-height: 2.2rem;
   }
 }
 

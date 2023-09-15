@@ -12,15 +12,15 @@
 
 @media only screen and (min-width: 576px) {
   .projects-list {
-    grid-template-columns: repeat(auto-fit, 54vw);
+    gap: 2.4em;
+    grid-template-columns: repeat(auto-fit, 26rem);
   }
 }
 
 @media only screen and (min-width: 768px) {
   .projects-list {
     gap: 4.8em;
-    grid-template-columns: repeat(auto-fit, 31.2rem);
-    justify-content: space-evenly;
+    grid-template-columns: repeat(auto-fit, 32.8rem);
   }
 }
 
@@ -32,12 +32,12 @@
 
 @media only screen and (min-width: 1200px) {
   .projects-list {
-    gap: 3.3em;
-    grid-template-columns: repeat(auto-fit, 33rem);
+    gap: 4.8em;
+    grid-template-columns: repeat(auto-fit, 32.8rem);
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1440px) {
   .projects-list {
     gap: 5.6em;
     grid-template-columns: repeat(auto-fit, 40rem);
