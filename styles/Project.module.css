@@ -116,15 +116,29 @@
 
 @media only screen and (min-width: 1440px) {
   .project {
-    padding: 3.2em;
+    border-radius: 3em;
+  }
+
+  .project-image {
+    border-radius: 3em;
+    height: 18.4rem;
+  }
+
+  .project-title-icon-container {
+    padding-top: 3.2em;
+  }
+
+  .project-title {
+    font-size: 2.6rem;
   }
 
   .project-icon {
-    height: 2.2em;
-    width: 2.2em;
+    height: 2.6em;
+    width: 2.6em;
   }
 
   .project-description {
+    font-size: 1.8rem;
     padding-top: 2.4rem;
   }
 }

@@ -50,7 +50,7 @@ export const Project = ({
           <FontAwesomeIcon
             className={styles['project-icon']}
             icon={faGithub}
-            color="#61DAFB"
+            color="#7CACD7"
             title="github"
           />
         </Link>
