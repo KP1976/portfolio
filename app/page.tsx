@@ -21,9 +21,9 @@ const Home = () => {
         <Navigation />
         <Header />
         <Projects />
-        {/* <AboutMe /> */}
-        {/* <Contact /> */}
-        {/* <Footer /> */}
+        <AboutMe />
+        <Contact />
+        <Footer />
       </div>
     </>
   );

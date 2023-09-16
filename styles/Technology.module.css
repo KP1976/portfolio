@@ -1,22 +1,22 @@
 .technology-list {
   align-items: flex-end;
-  column-gap: 4.2rem;
+  column-gap: 4.8rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  row-gap: 2.4rem;
+  row-gap: 1.6rem;
 }
 
 .technology-image {
   aspect-ratio: auto;
   border-radius: 0.5rem;
-  height: 5.4rem;
+  height: 5.6rem;
   mix-blend-mode: luminosity;
   opacity: 30%;
-  width: 5.4rem;
+  width: auto;
 }
 
 .technology-list li:last-child .technology-image {
@@ -30,21 +30,19 @@
 
 @media only screen and (min-width: 576px) {
   .technology-list {
-    column-gap: 4.8rem;
+    row-gap: 2.4rem;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .technology-list {
     align-items: flex-end;
-    column-gap: 3rem;
     justify-content: start;
-    row-gap: 3.6rem;
+    row-gap: 3.2rem;
   }
 
   .technology-image {
-    height: 5rem;
-    width: 5rem;
+    height: 4.8rem;
   }
 
   .technology-list li:last-child .technology-image {
@@ -56,14 +54,13 @@
     width: 9.5rem;
   }
 
-  .technology-list li:nth-last-child(3) .technology-image {
+  /* .technology-list li:nth-last-child(3) .technology-image {
     width: 10rem;
-  }
+  } */
 }
 
 @media only screen and (min-width: 992px) {
   .technology-list {
-    align-items: center;
     column-gap: 4.7rem;
   }
 
@@ -79,20 +76,19 @@
   }
 
   .technology-image {
-    height: 5.4rem;
-    width: 5.4rem;
+    height: 5.6rem;
   }
 
   .technology-list li:last-child .technology-image {
-    width: 12.2rem;
+    width: 12rem;
   }
 
   .technology-list li:nth-last-child(2) .technology-image {
-    width: 10.6rem;
+    width: 10.7rem;
   }
 
   .technology-list li:nth-last-child(3) .technology-image {
-    width: 11.1rem;
+    width: 9.2rem;
   }
 }
 
@@ -102,19 +98,18 @@
   }
 
   .technology-image {
-    height: 7rem;
-    width: 7rem;
+    height: 7.2rem;
   }
 
   .technology-list li:last-child .technology-image {
-    width: 12.3rem;
+    width: 11.9rem;
   }
 
   .technology-list li:nth-last-child(2) .technology-image {
-    width: 13.5rem;
+    width: 13.8rem;
   }
 
   .technology-list li:nth-last-child(3) .technology-image {
-    width: 14rem;
+    width: 11.8rem;
   }
 }
