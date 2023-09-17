@@ -42,7 +42,7 @@ a {
 
 footer {
   font-size: 1.4rem;
-  margin-top: 9.2rem;
+  padding-top: 7.2rem;
   text-align: center;
 }
 
@@ -59,7 +59,7 @@ footer {
 
   footer {
     font-size: 1.6rem;
-    margin-top: 11.6rem;
+    padding-top: 9.6rem;
     text-align: left;
   }
 }
@@ -71,7 +71,7 @@ footer {
 
   footer {
     font-size: 1.8rem;
-    margin-top: 12rem;
+    padding-top: 12rem;
   }
 }
 
@@ -81,21 +81,17 @@ footer {
   }
 
   footer {
-    margin-top: 19.6rem;
+    padding-top: 13.6rem;
   }
 }
 
 @media only screen and (min-width: 1440px) {
-  #contact .section-title {
-    margin: 0 0 1.2rem 0;
-  }
-
   .section-title {
     font-size: 4rem;
   }
 
   footer {
     font-size: 2rem;
-    margin-top: 20rem;
+    padding-top: 17.6rem;
   }
 }

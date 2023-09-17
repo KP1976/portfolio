@@ -1,13 +1,11 @@
 import Link from 'next/link';
 import React from 'react';
 import { ContactForm } from './ContactForm';
+import Image from 'next/image';
 
-import {
-  faFacebook,
-  faGithub,
-  faLinkedin,
-} from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import facebookIcon from '@public/facebook.png';
+import githubIcon from '@public/github.png';
+import linkedinIcon from '@public/linkedin.png';
 
 import styles from '@styles/Contact.module.css';
 
@@ -34,11 +32,11 @@ export const Contact = () => {
           href="https://www.facebook.com/KP1976PL"
           rel="noopener noreferrer"
         >
-          <FontAwesomeIcon
+          <Image
             className={styles['social-icon']}
-            icon={faFacebook}
-            color="#FFFFFF"
-            title="facebook"
+            src={facebookIcon}
+            alt=""
+            priority
           />
         </Link>
         <Link
@@ -46,11 +44,11 @@ export const Contact = () => {
           href="https://github.com/KP1976"
           rel="noopener noreferrer"
         >
-          <FontAwesomeIcon
+          <Image
             className={styles['social-icon']}
-            icon={faGithub}
-            color="#FFFFFF"
-            title="github"
+            src={githubIcon}
+            alt="github"
+            priority
           />
         </Link>
         <Link
@@ -58,11 +56,11 @@ export const Contact = () => {
           href="https://www.linkedin.com/in/krzysztof-paw%C5%82owski-74aa01154/"
           rel="noopener noreferrer"
         >
-          <FontAwesomeIcon
+          <Image
             className={styles['social-icon']}
-            icon={faLinkedin}
-            color="#FFFFFF"
-            title="linkedin"
+            src={linkedinIcon}
+            alt="github"
+            priority
           />
         </Link>
       </div>
