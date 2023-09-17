@@ -1,4 +1,5 @@
 import { Ubuntu } from '@next/font/google';
+import Head from 'next/head';
 import React from 'react';
 
 import { AboutMe } from '@components/AboutMe/AboutMe';
@@ -15,6 +16,9 @@ const ubuntu = Ubuntu({ weight: ['300', '700'], subsets: ['latin'] });
 const Home = () => {
   return (
     <>
+      <Head>
+        <title>The page title</title>
+      </Head>
       <div className={`${ubuntu.className} ${styles.container}`}>
         <Navigation />
         <Header />
