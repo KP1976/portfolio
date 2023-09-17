@@ -15,7 +15,7 @@ export const AboutMe = () => {
         </span>{' '}
         i&nbsp;jestem na początku kariery programisty JavaScript. Urodziłem się
         w&nbsp;1976 roku w&nbsp;Szczecinie, a&nbsp;obecnie mieszkam
-        w&nbsp;Warszawie. Chciałbym&nbsp; zmienić obecną pracę (przebranżowić
+        w&nbsp;Warszawie. Chciałbym&nbsp;zmienić obecną pracę (przebranżowić
         się) na&nbsp;
         <span className={styles['about-me-description-strong']}>
           Junior Front-End Developera.

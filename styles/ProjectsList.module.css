@@ -1,45 +1,49 @@
 .projects-list {
   align-items: center;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 31.2rem);
+  grid-template-columns: repeat(auto-fit, 32.8rem);
   justify-content: center;
   gap: 3.2em;
   list-style: none;
   margin: 0 auto;
-  padding: 0;
+  padding: 3.2rem 0 0 0;
   position: relative;
 }
 
 @media only screen and (min-width: 576px) {
   .projects-list {
-    grid-template-columns: repeat(auto-fit, 54vw);
+    gap: 2.4em;
+    grid-template-columns: repeat(auto-fit, 26rem);
   }
 }
 
 @media only screen and (min-width: 768px) {
   .projects-list {
     gap: 4.8em;
-    grid-template-columns: repeat(auto-fit, 31.2rem);
-    justify-content: space-evenly;
+    grid-template-columns: repeat(auto-fit, 32.8rem);
   }
 }
 
 @media only screen and (min-width: 992px) {
   .projects-list {
     grid-template-columns: repeat(auto-fit, 42.4rem);
+    padding-top: 4rem;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .projects-list {
-    gap: 3.3em;
-    grid-template-columns: repeat(auto-fit, 33rem);
+    gap: 4.8em;
+    grid-template-columns: repeat(auto-fit, 32.8rem);
+    padding-top: 4.8rem;
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1440px) {
   .projects-list {
     gap: 5.6em;
-    grid-template-columns: repeat(auto-fit, 40rem);
+    grid-template-columns: repeat(auto-fit, 37.5rem);
+    justify-content: space-between;
+    padding-top: 5.6rem;
   }
 }

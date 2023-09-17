@@ -1,4 +1,5 @@
 import '@styles/globals.css';
+import styles from '@styles/Home.module.css';
 
 export default function RootLayout({
   children,
@@ -8,7 +9,11 @@ export default function RootLayout({
   return (
     <html lang="pl">
       <head />
-      <body>{children}</body>
+      <body>
+        <div className={styles['flare1']}></div>
+        <div className={styles['flare2']}></div>
+        {children}
+      </body>
     </html>
   );
 }

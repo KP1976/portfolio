@@ -1,28 +1,28 @@
 .projects {
-  margin-top: 9.2rem;
+  padding-top: 7.2rem;
   position: relative;
 }
 
 .projects-flare {
   background-color: var(--main-color);
   border-radius: 50%;
-  filter: blur(110px);
-  height: 100%;
+  filter: blur(120px);
+  height: 81.5%;
   left: 0;
   position: absolute;
-  top: 6.4rem;
+  top: 13rem;
   width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
   .projects {
-    margin-top: 11.6rem;
+    padding-top: 9.6rem;
   }
 }
 
 @media only screen and (min-width: 992px) {
   .projects {
-    margin-top: 12rem;
+    padding-top: 12rem;
   }
 
   .projects-flare {
@@ -32,15 +32,13 @@
 
 @media only screen and (min-width: 1200px) {
   .projects {
-    margin-top: 19.6em;
+    padding-top: 13.6em;
   }
-}
 
-@media only screen and (min-width: 1440px) {
   .projects-flare {
-    height: 50%;
+    filter: blur(210px);
     left: 50%;
-    top: 50%;
+    top: 81%;
     transform: translate(-50%, -50%);
     width: 50%;
   }
@@ -48,6 +46,6 @@
 
 @media only screen and (min-width: 1440px) {
   .projects {
-    margin-top: 20em;
+    padding-top: 17.6em;
   }
 }

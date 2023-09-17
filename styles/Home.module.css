@@ -1,7 +1,8 @@
 .container {
-  padding: 1.6em 2.4em;
+  padding: 1.6em;
   min-height: 100vh;
-  overflow: hidden;
+  position: relative;
+  overflow-x: hidden;
 }
 
 .flare1 {
@@ -45,7 +46,7 @@
 
 @media only screen and (min-width: 768px) {
   .container {
-    padding: 4.8rem;
+    padding: 3.2rem;
   }
 
   .flare1 {
@@ -64,6 +65,10 @@
 }
 
 @media only screen and (min-width: 992px) {
+  .container {
+    padding: 3.2rem 4.8rem 4.8rem;
+  }
+
   .flare1 {
     height: 48.2rem;
     left: 16%;
@@ -81,7 +86,7 @@
 
 @media only screen and (min-width: 1200px) {
   .container {
-    padding: 6rem;
+    padding: 4.8rem 6rem 6rem 6rem;
   }
 
   .flare1 {
@@ -103,7 +108,7 @@
   .container {
     max-width: 144rem;
     margin: 0 auto;
-    padding: 6.4rem;
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
   }
 
   .flare1 {
