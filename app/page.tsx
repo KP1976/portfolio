@@ -16,8 +16,6 @@ const Home = () => {
   return (
     <>
       <div className={`${ubuntu.className} ${styles.container}`}>
-        <div className={styles['flare1']}></div>
-        <div className={styles['flare2']}></div>
         <Navigation />
         <Header />
         <Projects />
