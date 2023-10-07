@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 3.2rem;
+  padding-top: 2.4rem;
   position: relative;
 }
 
@@ -46,18 +46,16 @@
   border-radius: 2rem;
   color: var(--background-color);
   font-size: 1.4rem;
-  height: 4.1rem;
-  line-height: 1.2;
+  height: 3.8rem;
+  line-height: 100%;
   padding: 1.2rem 1.6rem;
   text-transform: uppercase;
-  width: 12.1rem;
 }
 
 .cta-button-second {
   background-color: transparent;
   border: 1px solid var(--main-color);
   color: var(--main-color);
-  width: 15.2rem;
 }
 
 @media only screen and (min-width: 576px) {
