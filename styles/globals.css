@@ -1,7 +1,14 @@
 :root {
   --background-color: hsl(0, 0%, 13%);
-  --main-color: hsl(356, 60%, 67%);
-  --accent-color: hsl(208, 53%, 66%);
+  --transparent-black: hsla(0, 0%, 13%, 0.2);
+  --main-color: hsl(213, 92%, 62%);
+  --accent-color: hsl(15, 76%, 61%);
+  --gradient: linear-gradient(
+    -135deg,
+    var(--main-color) 0%,
+    var(--transparent-black) 50%,
+    var(--accent-color) 100%
+  );
 }
 
 html {

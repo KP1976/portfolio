@@ -2,7 +2,7 @@ import React from 'react';
 
 import styles from '@styles/ContactForm.module.css';
 
-import { Ubuntu } from '@next/font/google';
+import { Ubuntu } from 'next/font/google';
 
 const ubuntu = Ubuntu({ weight: '700', subsets: ['latin'] });
 
