@@ -1,12 +1,14 @@
 .project {
-  background-color: var(--background-color);
-  border-radius: 2.4em;
+  background: var(--gradient) padding-box;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 3em;
+  height: 31.4rem;
   padding: 3.2em;
-  height: 100%;
+  width: 32.8rem;
 }
 
 .project-image {
-  border-radius: 2.4em;
+  border-radius: 1.5em;
   height: auto;
   width: 100%;
 }
@@ -23,6 +25,7 @@
 }
 
 .project-icon {
+  color: var(--main-color);
   display: inline-block;
   height: 1.8em;
   width: 1.8em;

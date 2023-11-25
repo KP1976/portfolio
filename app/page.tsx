@@ -26,11 +26,13 @@ const Home = () => {
     <>
       <div className={`${ubuntu.className} ${styles.container}`}>
         <Navigation />
-        <Header />
-        <Projects />
-        <AboutMe />
-        <Contact />
-        <Footer />
+        <div className={`${styles.sections}`}>
+          <Header />
+          <Projects />
+          <AboutMe />
+          <Contact />
+          <Footer />
+        </div>
       </div>
     </>
   );
