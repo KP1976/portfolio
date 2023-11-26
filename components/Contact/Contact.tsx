@@ -12,7 +12,6 @@ import styles from '@styles/Contact.module.css';
 export const Contact = () => {
   return (
     <section className={styles.contact} id="contact">
-      <div className={styles['contact-flare']}></div>
       <h2 className="section-title">kontakt</h2>
       <h3 className={styles['contact-subtitle']}>
         Masz do mnie jakieś pytania? Pisz pod poniższy adres lub skorzystaj

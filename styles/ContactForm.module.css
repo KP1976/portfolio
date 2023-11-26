@@ -46,7 +46,7 @@
 }
 
 .contact-form-button {
-  background-color: var(--accent-color);
+  background-color: var(--main-color);
   border: none;
   border-radius: 1rem;
   font-size: 1.6rem;
