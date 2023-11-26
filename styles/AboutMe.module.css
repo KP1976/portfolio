@@ -1,12 +1,8 @@
-.about-me {
-  padding-top: 7.2rem;
-}
-
 .about-me-description {
   font-size: 1.6rem;
   line-height: 150%;
   margin: 0;
-  padding: 3.2rem 1.5rem;
+  padding: 3.2rem 0;
   text-align: center;
 }
 
