@@ -49,23 +49,6 @@
   .contact-subtitle {
     width: 100%;
   }
-
-  .email-wrapper {
-    padding-top: 4rem;
-  }
-
-  .email {
-    padding-top: 0.8rem;
-  }
-
-  .social-icons {
-    padding-top: 3.2rem;
-  }
-
-  .social-icon {
-    height: 4rem;
-    width: 4rem;
-  }
 }
 
 @media only screen and (min-width: 768px) {
