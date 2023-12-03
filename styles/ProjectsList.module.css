@@ -12,8 +12,11 @@
 
 @media only screen and (min-width: 576px) {
   .projects-list {
-    gap: 2.4em;
-    grid-template-columns: repeat(auto-fit, 26rem);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+    justify-content: center;
   }
 }
 
