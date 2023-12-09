@@ -23,6 +23,13 @@
     var(--main-color2),
     var(--main-color) 100%
   );
+  --gradient2: linear-gradient(
+    45deg,
+    var(--accent-color) 10%,
+    var(--transparent-black) 45%,
+    var(--transparent-black) 55%,
+    var(--main-color) 100%
+  );
 }
 
 html {
