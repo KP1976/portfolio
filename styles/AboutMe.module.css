@@ -11,10 +11,6 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .about-me {
-    padding-top: 9.6rem;
-  }
-
   .about-me-description {
     text-align: left;
   }
@@ -33,10 +29,6 @@
 }
 
 @media only screen and (min-width: 1200px) {
-  .about-me {
-    padding-top: 13.6rem;
-  }
-
   .about-me-description {
     font-size: 2rem;
     line-height: 160%;
@@ -45,10 +37,6 @@
 }
 
 @media only screen and (min-width: 1440px) {
-  .about-me {
-    padding-top: 17.6rem;
-  }
-
   .about-me-description {
     font-size: 2.4rem;
     padding: 5.6rem 0;
