@@ -93,48 +93,34 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .header {
-    align-items: start;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, auto);
-    padding-top: 5.6rem;
-    position: relative;
-    row-gap: 3rem;
-  }
-
   .header-image {
-    grid-column: 2 / 3;
-    grid-row: 1 / -1;
-    justify-self: end;
-    width: 35.3rem;
+    height: auto;
+    width: 51.8rem;
   }
 
   .header-title {
-    font-size: 3.8rem;
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    padding: 0;
-    text-align: left;
-    width: 100%;
+    font-size: 4.4rem;
+    padding-top: 2.4rem;
   }
 
   .header-subtitle {
-    margin: 0;
-    padding: 0;
-    text-align: left;
+    font-size: 3.3rem;
     width: 100%;
   }
 
-  .buttons {
-    justify-content: flex-start;
-    gap: 2.4rem;
-    padding: 2.6rem 0 0 0;
+  .header-description {
+    font-size: 1.8rem;
+    padding-top: 2.4rem;
   }
 
+  .buttons {
+    width: 50%;
+  }
+
+  .cta-button,
   .cta-button-second {
-    border: 2px solid var(--main-color);
-    width: auto;
+    font-size: 1.4rem;
+    height: 4.6rem;
   }
 }
 
