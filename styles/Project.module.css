@@ -70,29 +70,37 @@
 @media only screen and (min-width: 992px) {
   .project {
     border-radius: 3em;
+    height: 33.3rem;
+    width: 32.6rem;
   }
 
   .project-image {
-    border-radius: 3em;
-    height: 19.2rem;
+    border-radius: 1.5em;
+    height: 16rem;
   }
 
   .project-title-icon-container {
-    padding-top: 3.2em;
+    padding-top: 2.4em;
+  }
+
+  .project-title-icon-container a {
+    height: 2em;
   }
 
   .project-title {
-    font-size: 2.6rem;
+    font-size: 2rem;
+    line-height: 100%;
   }
 
   .project-icon {
-    height: 2.6em;
-    width: 2.6em;
+    height: 2em;
+    width: 2em;
   }
 
   .project-description {
-    font-size: 1.8rem;
-    padding-top: 2.4rem;
+    font-size: 1.6rem;
+    letter-spacing: 0.2px;
+    line-height: 120%;
   }
 }
 

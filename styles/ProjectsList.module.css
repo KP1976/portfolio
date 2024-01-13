@@ -29,8 +29,8 @@
 
 @media only screen and (min-width: 992px) {
   .projects-list {
-    grid-template-columns: repeat(auto-fit, 42.4rem);
-    padding-top: 4rem;
+    gap: 1.6em;
+    grid-template-columns: repeat(auto-fit, 32.6rem);
   }
 }
 
