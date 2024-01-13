@@ -30,8 +30,8 @@
 }
 
 @media only screen and (min-width: 1200px) {
-  .container {
-    padding: 4.8rem 6rem 6rem 6rem;
+  .sections {
+    padding: 3.2rem 10.8rem;
   }
 }
 
