@@ -12,7 +12,6 @@
 
 .technology-image {
   aspect-ratio: auto;
-  border-radius: 0.5rem;
   height: 5.6rem;
   mix-blend-mode: luminosity;
   opacity: 30%;
@@ -41,7 +40,8 @@
 
 @media only screen and (min-width: 992px) {
   .technology-list {
-    column-gap: 4.7rem;
+    column-gap: 4rem;
+    justify-content: start;
   }
 
   .technology-list li:last-child .technology-image {
