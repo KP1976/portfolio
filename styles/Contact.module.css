@@ -84,10 +84,9 @@
 
 @media only screen and (min-width: 992px) {
   .contact {
-    gap: 0 4.9rem;
+    gap: 0 1.6rem;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 3.4rem 4rem 4.4rem 3.2rem 5.6rem 3.2rem 4rem auto;
-    padding-top: 12rem;
+    grid-template-rows: 2.4rem 3.2rem 5rem 3.2rem 4.5rem 3.2rem 4rem auto;
   }
 
   .contact-subtitle {
@@ -95,13 +94,21 @@
     width: 100%;
   }
 
+  .email-title {
+    font-size: 1.8rem;
+  }
+
+  .email {
+    font-size: 1.6rem;
+  }
+
   .social-icons {
-    column-gap: 3.2rem;
-    grid-column: 1 / 2;
-    grid-row: 7 / 8;
-    justify-content: space-between;
-    padding-top: 0;
-    width: 21rem;
+    column-gap: 4rem;
+  }
+
+  .social-icon {
+    height: 4rem;
+    width: 4rem;
   }
 }
 
