@@ -179,6 +179,7 @@
   }
 
   .cta-button-second {
+    border: 2px solid var(--main-color);
     line-height: 1.6rem;
     width: 100%;
   }
@@ -221,32 +222,33 @@
 
 @media only screen and (min-width: 1440px) {
   .header {
-    padding-top: 6.4rem;
-    row-gap: 4.8rem;
+    column-gap: 2.4rem;
   }
 
   .header-image {
-    margin-top: 1.4rem;
-    width: 56.7rem;
+    width: 55.8rem;
   }
 
   .header-title {
-    font-size: 7.2rem;
+    font-size: 7.1rem;
   }
 
   .header-subtitle {
-    font-size: 2.4rem;
-    width: 90%;
+    font-size: 3.6rem;
+  }
+
+  .header-description {
+    padding: 4rem 0 0;
   }
 
   .buttons {
-    gap: 4.8rem;
+    gap: 2.4rem;
+    padding: 6.4rem 0 0;
   }
 
   .cta-button {
     font-size: 2.4rem;
-    height: 7.7rem;
-    line-height: 3rem;
-    padding: 2.4rem 3.2rem;
+    height: 7.2rem;
+    padding: 2.4rem;
   }
 }
