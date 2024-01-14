@@ -106,31 +106,13 @@
 
 @media only screen and (min-width: 1200px) {
   .project {
-    border-radius: 2.4em;
-    padding: 3.2em;
+    padding: 2.4em;
+    width: 31.6rem;
   }
 
   .project-image {
-    border-radius: 2.4em;
-    height: 15.6rem;
-  }
-
-  .project-title-icon-container {
-    padding-top: 2.4em;
-  }
-
-  .project-title {
-    font-size: 1.6rem;
-  }
-
-  .project-icon {
-    height: 1.8em;
-    width: 1.8em;
-  }
-
-  .project-description {
-    font-size: 1.4rem;
-    padding-top: 1.6rem;
+    border-radius: 1.5em;
+    height: 16rem;
   }
 }
 
