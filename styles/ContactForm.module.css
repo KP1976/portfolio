@@ -121,8 +121,8 @@
 @media only screen and (min-width: 1440px) {
   .contact-form {
     column-gap: 2.4rem;
-    grid-template-columns: 27.8rem 39rem;
-    grid-template-rows: 10.1rem 3.2rem 30.5rem 7.2rem 7.2rem;
+    grid-template-columns: 24.2rem 29.2rem;
+    grid-template-rows: 8.8rem 1.6rem 24.2rem 6.4rem 7.2rem;
   }
 
   .contact-form .contact-form-label-and-input:nth-child(2) {
@@ -136,8 +136,7 @@
   }
 
   .contact-form-label {
-    font-size: 2.4rem;
-    padding-bottom: 1.6rem;
+    font-size: 2rem;
   }
 
   .contact-form-input {
@@ -149,9 +148,10 @@
   }
 
   .contact-form-button {
-    font-size: 2rem;
+    font-size: 2.4rem;
     grid-column: 1 / -1;
     grid-row: 5 / 6;
-    height: 7.2rem;
+    height: 6.9rem;
+    padding: 2rem;
   }
 }
