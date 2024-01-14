@@ -111,36 +111,40 @@
   }
 
   .project-image {
-    border-radius: 1.5em;
+    border-radius: 1.5rem;
     height: 16rem;
   }
 }
 
 @media only screen and (min-width: 1440px) {
   .project {
-    border-radius: 3em;
+    height: 34.7rem;
+    width: 36.4rem;
   }
 
   .project-image {
-    border-radius: 3em;
-    height: 18.4rem;
+    height: 17.5rem;
   }
 
   .project-title-icon-container {
-    padding-top: 3.2em;
+    padding-top: 3.2rem;
+  }
+
+  .project-title-icon-container a {
+    height: 2.4rem;
   }
 
   .project-title {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
   }
 
   .project-icon {
-    height: 2.6em;
-    width: 2.6em;
+    height: 2.6rem;
+    width: 2.6rem;
   }
 
   .project-description {
     font-size: 1.8rem;
-    padding-top: 2.4rem;
+    letter-spacing: -0.01px;
   }
 }
