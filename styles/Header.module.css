@@ -135,7 +135,7 @@
   .header-image {
     grid-column: 2 / 3;
     grid-row: 1 / 5;
-    width: 44rem;
+    width: 100%;
   }
 
   .header-title {
@@ -186,10 +186,6 @@
 }
 
 @media only screen and (min-width: 1200px) {
-  .header-image {
-    width: 48.6rem;
-  }
-
   .header-title {
     font-size: 6.2rem;
   }
@@ -223,10 +219,6 @@
 @media only screen and (min-width: 1440px) {
   .header {
     column-gap: 2.4rem;
-  }
-
-  .header-image {
-    width: 55.8rem;
   }
 
   .header-title {
