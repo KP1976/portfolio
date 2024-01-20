@@ -106,7 +106,7 @@
 
 @media only screen and (min-width: 1200px) {
   .project {
-    padding: 2.4em;
+    padding: 2.4rem;
     width: 31.6rem;
   }
 
@@ -146,5 +146,26 @@
   .project-description {
     font-size: 1.8rem;
     letter-spacing: -0.01px;
+  }
+}
+
+@media only screen and (min-width: 1732px) {
+  .project {
+    height: 39.7rem;
+    padding: 3.2rem;
+    width: 45.6rem;
+  }
+
+  .project-image {
+    height: 22.5rem;
+  }
+
+  .project-title-icon-container {
+    padding-top: 1.6rem;
+  }
+
+  .project-icon {
+    height: 2.4rem;
+    width: 2.4rem;
   }
 }

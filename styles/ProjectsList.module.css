@@ -44,3 +44,9 @@
     justify-content: space-between;
   }
 }
+
+@media only screen and (min-width: 1732px) {
+  .projects-list {
+    gap: 3.2rem;
+  }
+}
