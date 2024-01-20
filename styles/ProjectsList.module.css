@@ -6,44 +6,54 @@
   gap: 2.4em;
   list-style: none;
   margin: 0 auto;
-  padding: 3.2rem 0 0 0;
+  padding: 0;
   position: relative;
 }
 
 @media only screen and (min-width: 576px) {
   .projects-list {
-    gap: 2.4em;
-    grid-template-columns: repeat(auto-fit, 26rem);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+    justify-content: center;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .projects-list {
-    gap: 4.8em;
-    grid-template-columns: repeat(auto-fit, 32.8rem);
+    gap: 2.4em;
   }
 }
 
 @media only screen and (min-width: 992px) {
   .projects-list {
-    grid-template-columns: repeat(auto-fit, 42.4rem);
-    padding-top: 4rem;
+    gap: 1.6em;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .projects-list {
-    gap: 4.8em;
-    grid-template-columns: repeat(auto-fit, 32.8rem);
-    padding-top: 4.8rem;
+    gap: 2.4rem;
+    width: 100%;
   }
 }
 
 @media only screen and (min-width: 1440px) {
   .projects-list {
-    gap: 5.6em;
-    grid-template-columns: repeat(auto-fit, 37.5rem);
     justify-content: space-between;
-    padding-top: 5.6rem;
+  }
+}
+
+@media only screen and (min-width: 1732px) {
+  .projects-list {
+    gap: 3.2rem;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .projects-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }

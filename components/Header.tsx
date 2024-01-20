@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import React from 'react';
-import headerPic from '@public/header.png';
+import headerPic from '@public/laptop.png';
 import styles from '@styles/Header.module.css';
 
-import { Ubuntu } from '@next/font/google';
+import { Ubuntu } from 'next/font/google';
 
 const ubuntu = Ubuntu({ weight: '700', subsets: ['latin'] });
 
@@ -18,24 +18,25 @@ export const Header = () => {
       />
 
       <h1 className={styles['header-title']}>
-        Chcesz zatrudnić junior front-end developera?
-        <br />
-        <span className={styles['header-title-strong']}>Daj mi szansę!</span>
+        Nowa Energia w&nbsp;Kodowaniu:{' '}
       </h1>
+      <h2 className={styles['header-subtitle']}>
+        Twój Następny Junior Front-End Developer!
+      </h2>
 
-      <p className={styles['header-subtitle']}>
-        Od kilku lat programuję w języku{' '}
-        <span className={styles['header-title-strong']}>JavaScript.</span>{' '}
-        Zajmuję się również projektowaniem stron internetowych. Umieściłem kilka
-        swoich prac, które mogą Cię zainteresować.
+      <p className={styles['header-description']}>
+        Czy szukasz kogoś, kto nie tylko dostarczy kod, ale także wniesie świeże
+        spojrzenie i&nbsp;energię do zespołu? To ja! Chcę rozwijać się jako
+        junior front-end developer oraz przyczyniać się do sukcesów Twojej
+        firmy.
       </p>
 
       <div className={styles.buttons}>
         <a
-          className={`${styles['cta-button']} ${ubuntu.className}`}
+          className={`${styles['cta-button']}  ${ubuntu.className}`}
           href="#projects"
         >
-          moje prace
+          projekty
         </a>
         <a
           className={`${styles['cta-button']} ${styles['cta-button-second']} ${ubuntu.className}`}

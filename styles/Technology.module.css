@@ -12,7 +12,6 @@
 
 .technology-image {
   aspect-ratio: auto;
-  border-radius: 0.5rem;
   height: 5.6rem;
   mix-blend-mode: luminosity;
   opacity: 30%;
@@ -28,23 +27,7 @@
   width: 10.3rem;
 }
 
-@media only screen and (min-width: 576px) {
-  .technology-list {
-    row-gap: 2.4rem;
-  }
-}
-
 @media only screen and (min-width: 768px) {
-  .technology-list {
-    align-items: flex-end;
-    justify-content: start;
-    row-gap: 3.2rem;
-  }
-
-  .technology-image {
-    height: 4.8rem;
-  }
-
   .technology-list li:last-child .technology-image {
     height: 2rem;
     width: 9.75rem;
@@ -53,15 +36,12 @@
   .technology-list li:nth-last-child(2) .technology-image {
     width: 9.5rem;
   }
-
-  /* .technology-list li:nth-last-child(3) .technology-image {
-    width: 10rem;
-  } */
 }
 
 @media only screen and (min-width: 992px) {
   .technology-list {
-    column-gap: 4.7rem;
+    column-gap: 4rem;
+    justify-content: start;
   }
 
   .technology-list li:last-child .technology-image {
@@ -72,7 +52,7 @@
 
 @media only screen and (min-width: 1200px) {
   .technology-list {
-    column-gap: 6.4rem;
+    column-gap: 5.6rem;
   }
 
   .technology-image {
@@ -94,7 +74,7 @@
 
 @media only screen and (min-width: 1440px) {
   .technology-list {
-    column-gap: 7.9rem;
+    justify-content: space-between;
   }
 
   .technology-image {

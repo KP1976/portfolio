@@ -1,7 +1,35 @@
 :root {
   --background-color: hsl(0, 0%, 13%);
-  --main-color: hsl(356, 60%, 67%);
-  --accent-color: hsl(208, 53%, 66%);
+  --transparent-black: hsla(0, 0%, 13%, 1);
+  --main-color: hsl(213, 92%, 62%);
+  --main-color2: rgb(69, 149, 247, 0.5);
+  --main-color3: rgb(69, 149, 247, 0.25);
+  --main-color4: rgb(69, 149, 247, 0.125);
+  --main-color5: rgb(69, 149, 247, 0.0625);
+  --accent-color: hsl(15, 77%, 61%);
+  --accent-color2: rgba(232, 117, 79, 0.5);
+  --accent-color3: rgba(232, 117, 79, 0.25);
+  --accent-color4: rgba(232, 117, 79, 0.125);
+  --accent-color5: rgba(232, 117, 79, 0.0625);
+  --gradient: linear-gradient(
+    45deg,
+    var(--accent-color) 0%,
+    var(--accent-color2) 20%,
+    var(--accent-color3) 30%,
+    var(--accent-color4) 40%,
+    var(--accent-color5) 50%,
+    var(--main-color4),
+    var(--main-color3),
+    var(--main-color2),
+    var(--main-color) 100%
+  );
+  --gradient2: linear-gradient(
+    45deg,
+    var(--accent-color) 10%,
+    var(--transparent-black) 45%,
+    var(--transparent-black) 55%,
+    var(--main-color) 100%
+  );
 }
 
 html {
@@ -31,7 +59,7 @@ a {
 }
 
 .section-title {
-  color: var(--main-color);
+  color: white;
   font-size: 1.8rem;
   font-weight: 700;
   letter-spacing: 0.1em;
@@ -43,16 +71,10 @@ a {
 
 footer {
   font-size: 1.4rem;
-  padding-top: 7.2rem;
   text-align: center;
 }
 
 @media only screen and (min-width: 768px) {
-  .section-title {
-    font-size: 2.6rem;
-    text-align: left;
-  }
-
   #contact .section-title {
     grid-column: 1 / -1;
     margin: 0;
@@ -60,39 +82,37 @@ footer {
 
   footer {
     font-size: 1.6rem;
-    padding-top: 9.6rem;
     text-align: left;
   }
 }
 
 @media only screen and (min-width: 992px) {
   .section-title {
-    font-size: 2.8rem;
+    font-size: 2rem;
+    text-align: left;
   }
 
   footer {
     font-size: 1.8rem;
-    padding-top: 12rem;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .section-title {
-    font-size: 3.2rem;
+    font-size: 2.4rem;
   }
 
   footer {
-    padding-top: 13.6rem;
+    font-size: 2rem;
   }
 }
 
 @media only screen and (min-width: 1440px) {
   .section-title {
-    font-size: 4rem;
+    font-size: 3.2rem;
   }
 
   footer {
     font-size: 2rem;
-    padding-top: 17.6rem;
   }
 }

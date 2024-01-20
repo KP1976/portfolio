@@ -13,15 +13,18 @@ export const AboutMe = () => {
         <span className={styles['about-me-description-strong']}>
           Krzysztof Pawłowski
         </span>{' '}
-        i&nbsp;jestem na początku kariery programisty JavaScript. Urodziłem się
-        w&nbsp;1976 roku w&nbsp;Szczecinie, a&nbsp;obecnie mieszkam
-        w&nbsp;Warszawie. Chciałbym&nbsp;zmienić obecną pracę (przebranżowić
-        się) na&nbsp;
+        i&nbsp;jestem na początku kariery programisty. Chciałbym zmienić obecną
+        pracę (przebranżowić się) na&nbsp;
         <span className={styles['about-me-description-strong']}>
           Junior Front-End Developera.
         </span>
         <br />
-        <br />W swoich pracach używam następujących technologii:
+        <br />
+        Poniżej znajduje się lista technologii jakich używam w swoich
+        projektach. Chociaż moje portfolio może być niewielkie, to moje
+        podejście do kodowania jest pełne zaangażowania. Chcę nie tylko tworzyć
+        strony internetowe, ale także uczestniczyć w&nbsp;tworzeniu doświadczeń,
+        które wyróżniają się.
       </p>
 
       <TechnologyList />

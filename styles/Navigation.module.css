@@ -1,12 +1,13 @@
 .navigation {
   display: flex;
   justify-content: space-between;
+  padding: 1.6rem;
   position: relative;
   z-index: 1;
 }
 
 .logo {
-  color: var(--accent-color);
+  color: var(--main-color);
   font-size: 1.6rem;
   text-transform: uppercase;
   font-weight: 700;
@@ -32,36 +33,40 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .navigation {
+    padding: 2.4rem 3.2rem;
+  }
+
   .logo {
     align-self: center;
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .menu {
-    gap: 0 4.8em;
+    gap: 0 4.8rem;
   }
 
   .menu-item:last-child .menu-item-link {
-    background-color: var(--main-color);
+    background-color: var(--accent-color);
     border-radius: 3rem;
     color: black;
     font-weight: 700;
-    padding: 1.2rem 2.4rem;
+    padding: 1.6rem 2.4rem;
     text-transform: uppercase;
   }
 
   .menu-item-link {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 }
 
 @media only screen and (min-width: 992px) {
-  .menu {
-    gap: 0 6em;
+  .logo {
+    font-size: 2.4rem;
   }
 
   .menu-item:last-child .menu-item-link {
-    padding: 1.6rem 2.4rem;
+    line-height: 1;
   }
 
   .menu-item-link {
@@ -70,29 +75,47 @@
 }
 
 @media only screen and (min-width: 1200px) {
-  .logo {
-    font-size: 3.6rem;
-  }
-
-  .menu-item-link {
-    font-size: 2.6rem;
+  .navigation {
+    padding: 3.2rem 10.2rem;
   }
 }
 
 @media only screen and (min-width: 1440px) {
+  .navigation {
+    margin: 0 auto;
+    padding: 4.8rem 15rem;
+  }
+
   .menu {
-    gap: 0 9.6em;
+    gap: 0 6.4rem;
   }
 
   .logo {
-    font-size: 4rem;
+    font-size: 3.2rem;
   }
 
   .menu-item-link {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
   }
 
   .menu-item:last-child .menu-item-link {
-    padding: 1.6rem 3.2rem;
+    border-radius: 4.5rem;
+    padding: 2.4rem 3.2rem;
+  }
+}
+
+@media only screen and (min-width: 1732px) {
+  .navigation {
+    margin: 0 auto;
+    max-width: 192rem;
+    padding: 4.8rem 24.4rem;
+  }
+
+  .menu {
+    gap: 0 7.2rem;
+  }
+
+  .menu-item:last-child .menu-item-link {
+    padding: 2.4rem 5.2rem;
   }
 }

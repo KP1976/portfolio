@@ -10,32 +10,37 @@
 .header-image {
   height: auto;
   position: relative;
-  width: 21.5rem;
+  width: 100%;
 }
 
 .header-title {
-  font-size: 3.2rem;
-  margin: 0;
-  padding: 2.4rem 0;
-  text-align: center;
-  line-height: 1.2;
-}
-
-.header-title-strong {
   color: var(--main-color);
+  font-size: 4.2rem;
+  margin: 0;
+  padding: 3.2rem 0 0.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1;
 }
 
 .header-subtitle {
-  font-size: 1.6rem;
-  text-align: center;
-  line-height: 1.4;
+  font-size: 3.1rem;
   margin: 0;
-  padding-bottom: 2.4rem;
+  text-align: center;
+}
+
+.header-description {
+  font-size: 1.6rem;
+  letter-spacing: 0.1px;
+  line-height: 150%;
+  margin: 0;
+  padding: 3.2rem 0;
+  text-align: center;
 }
 
 .buttons {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   gap: 1.6rem;
   width: 100%;
 }
@@ -43,194 +48,220 @@
 .cta-button {
   background-color: var(--main-color);
   border: none;
-  border-radius: 2rem;
+  border-radius: 3rem;
   color: var(--background-color);
-  font-size: 1.4rem;
-  height: 3.8rem;
+  font-size: 1.6rem;
   line-height: 100%;
-  padding: 1.2rem 1.6rem;
+  padding: 1.6rem 2.4rem;
+  text-align: center;
   text-transform: uppercase;
 }
 
 .cta-button-second {
-  background-color: transparent;
+  background: transparent;
   border: 1px solid var(--main-color);
   color: var(--main-color);
 }
 
 @media only screen and (min-width: 576px) {
-  .header {
-    padding-top: 3rem;
-  }
-
   .header-image {
+    height: 21.5rem;
     width: 38rem;
   }
 
   .header-title {
-    padding: 3rem 0 2.4rem;
-    width: 80%;
+    font-size: 4.8rem;
   }
 
   .header-subtitle {
-    padding-bottom: 2.4rem;
-    width: 94%;
+    font-size: 3.7rem;
+    width: 90%;
+  }
+
+  .header-description {
+    width: 99%;
+  }
+
+  .buttons {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .cta-button,
+  .cta-button-second {
+    width: 100%;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .header {
-    align-items: start;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, auto);
-    padding-top: 5.6rem;
-    position: relative;
-    row-gap: 3rem;
-  }
-
   .header-image {
-    grid-column: 2 / 3;
-    grid-row: 1 / -1;
-    justify-self: end;
-    width: 35.3rem;
+    height: auto;
+    width: 51.8rem;
   }
 
   .header-title {
-    font-size: 3.8rem;
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    padding: 0;
-    text-align: left;
-    width: 100%;
+    font-size: 4.4rem;
+    padding-top: 2.4rem;
   }
 
   .header-subtitle {
-    margin: 0;
-    padding: 0;
-    text-align: left;
+    font-size: 3.3rem;
     width: 100%;
   }
 
-  .buttons {
-    justify-content: flex-start;
-    gap: 2.4rem;
-    padding: 2.6rem 0 0 0;
+  .header-description {
+    font-size: 1.8rem;
+    padding-top: 2.4rem;
   }
 
+  .buttons {
+    width: 50%;
+  }
+
+  .cta-button,
   .cta-button-second {
-    border: 2px solid var(--main-color);
-    width: auto;
+    font-size: 1.4rem;
+    height: 4.6rem;
   }
 }
 
 @media only screen and (min-width: 992px) {
   .header {
-    padding-top: 4.8rem;
-    row-gap: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    column-gap: 1.6rem;
   }
 
   .header-image {
-    width: 40rem;
+    grid-column: 2 / 3;
+    grid-row: 1 / 5;
+    width: 100%;
   }
 
   .header-title {
     font-size: 5.2rem;
-  }
-
-  .header-title-strong {
-    line-height: 1;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    padding: 0;
+    text-align: left;
   }
 
   .header-subtitle {
-    font-size: 1.8rem;
-    width: 91%;
+    font-size: 2.8rem;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    padding-top: 0.8rem;
+    text-align: left;
+  }
+
+  .header-description {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    padding: 2.4rem 0 0;
+    text-align: left;
   }
 
   .buttons {
     gap: 3.2rem;
-    padding: 0;
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    padding: 4.8rem 0 0;
+    width: 100%;
   }
 
   .cta-button {
     border-radius: 5rem;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     height: 5.2rem;
     line-height: 1.8rem;
     padding: 1.6rem;
-    width: auto;
+    width: 100%;
   }
 
   .cta-button-second {
+    border: 2px solid var(--main-color);
     line-height: 1.6rem;
-    width: auto;
+    width: 100%;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .header {
-    padding-top: 4.8rem;
-  }
-
-  .header-image {
-    margin-top: 1.4rem;
-    width: 47.4rem;
-  }
-
   .header-title {
-    font-size: 6rem;
+    font-size: 6.2rem;
   }
 
   .header-subtitle {
+    font-size: 3.1rem;
+    line-height: 1.2;
+  }
+
+  .header-description {
     font-size: 2rem;
-    line-height: 1.6;
+    padding: 3.2rem 0 0;
   }
 
   .buttons {
-    gap: 4rem;
-    margin-top: 0;
+    gap: 2.4rem;
   }
 
   .cta-button {
-    font-size: 2.2rem;
-    height: 5.8rem;
-    line-height: 2.6rem;
-    padding: 1.6rem 2.4rem;
+    font-size: 2rem;
+    height: 6.8rem;
+    line-height: 1;
+    padding: 2.4rem;
   }
 
   .cta-button-second {
-    line-height: 2.2rem;
+    line-height: 1;
   }
 }
 
 @media only screen and (min-width: 1440px) {
   .header {
-    padding-top: 6.4rem;
-    row-gap: 4.8rem;
-  }
-
-  .header-image {
-    margin-top: 1.4rem;
-    width: 56.7rem;
+    column-gap: 2.4rem;
   }
 
   .header-title {
-    font-size: 7.2rem;
+    font-size: 7.1rem;
   }
 
   .header-subtitle {
-    font-size: 2.4rem;
-    width: 90%;
+    font-size: 3.6rem;
+  }
+
+  .header-description {
+    padding: 4rem 0 0;
   }
 
   .buttons {
-    gap: 4.8rem;
+    gap: 2.4rem;
+    padding: 6.4rem 0 0;
   }
 
   .cta-button {
     font-size: 2.4rem;
-    height: 7.7rem;
-    line-height: 3rem;
-    padding: 2.4rem 3.2rem;
+    height: 7.2rem;
+    padding: 2.4rem;
+  }
+}
+
+@media only screen and (min-width: 1732px) {
+  .header {
+    column-gap: 15.4rem;
+    grid-template-columns: 57.8rem 1fr;
+  }
+
+  .header-title {
+    font-size: 7.4rem;
+  }
+
+  .header-subtitle {
+    font-size: 3.7rem;
+  }
+
+  .header-description {
+    font-size: 2.4rem;
+    padding: 4.8rem 0 0;
   }
 }
