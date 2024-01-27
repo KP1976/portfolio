@@ -13,6 +13,7 @@
     "@fortawesome/free-brands-svg-icons": "^6.5.1",
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "@react-email/components": "^0.0.14",
     "@types/node": "20.11.0",
     "@types/react": "18.2.47",
     "@types/react-dom": "18.2.18",
@@ -20,6 +21,7 @@
     "next": "^14.0.5-canary.60",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "resend": "^3.1.0",
     "sharp": "^0.33.2",
     "typescript": "5.3.3"
   },
