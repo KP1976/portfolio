@@ -11,6 +11,11 @@ export const sendEmail = async (formData: FormData) => {
   const senderEmail = formData.get('senderEmail') as string;
   const senderName = formData.get('name') as string;
 
+  if (message === '' || senderEmail === '' || senderName === '') {
+    console.error('Wypełnij wszystkie pola!');
+    return;
+  }
+
   await resend.emails.send({
     from: `Contact Form from ${senderName} <onboarding@resend.dev>`,
     to: 'kpawlowski1976@gmail.com',

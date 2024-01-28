@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useRef } from 'react';
 
 import styles from '@styles/ContactForm.module.css';
 
@@ -11,6 +11,10 @@ import { toast } from 'sonner';
 const ubuntu = Ubuntu({ weight: '700', subsets: ['latin'] });
 
 export const ContactForm = () => {
+  const nameRef = useRef<HTMLInputElement>(null);
+  const emailRef = useRef<HTMLInputElement>(null);
+  const messageRef = useRef<HTMLTextAreaElement>(null);
+
   return (
     <form
       className={styles['contact-form']}
@@ -27,6 +31,7 @@ export const ContactForm = () => {
           name="name"
           type="text"
           id="contact-name"
+          ref={nameRef}
         />
       </div>
 
@@ -39,8 +44,7 @@ export const ContactForm = () => {
           name="senderEmail"
           type="email"
           id="contact-email"
-          required
-          maxLength={100}
+          ref={emailRef}
         />
       </div>
 
@@ -55,15 +59,34 @@ export const ContactForm = () => {
           className={`${styles['contact-form-message']} ${ubuntu.className}`}
           name="message"
           id="contact-message"
-          required
-          maxLength={5000}
+          ref={messageRef}
         />
       </div>
 
       <button
         type="submit"
         className={`${styles['contact-form-button']} ${ubuntu.className}`}
-        onClick={() => toast('Wiadomość wysłana!')}
+        onClick={() => {
+          if (
+            nameRef.current?.value === '' ||
+            emailRef.current?.value === '' ||
+            messageRef.current?.value === ''
+          ) {
+            toast.error('Wypełnij wszystkie pola!');
+          } else {
+            toast.success('Wiadomość została wysłana!');
+          }
+
+          if (nameRef.current) {
+            nameRef.current.value = '';
+          }
+          if (emailRef.current) {
+            emailRef.current.value = '';
+          }
+          if (messageRef.current) {
+            messageRef.current.value = '';
+          }
+        }}
       >
         wyślij wiadomość
       </button>

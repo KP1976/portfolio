@@ -13,7 +13,7 @@ export default function RootLayout({
       <head />
       <body>
         {children}
-        <Toaster />
+        <Toaster richColors />
       </body>
     </html>
   );
