@@ -6,6 +6,7 @@ import styles from '@styles/ContactForm.module.css';
 
 import { Ubuntu } from 'next/font/google';
 import { sendEmail } from '@utils/sendEmail';
+import { toast } from 'sonner';
 
 const ubuntu = Ubuntu({ weight: '700', subsets: ['latin'] });
 
@@ -62,6 +63,7 @@ export const ContactForm = () => {
       <button
         type="submit"
         className={`${styles['contact-form-button']} ${ubuntu.className}`}
+        onClick={() => toast('Wiadomość wysłana!')}
       >
         wyślij wiadomość
       </button>
