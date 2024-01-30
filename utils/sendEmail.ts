@@ -3,7 +3,6 @@
 import React from 'react';
 import { Resend } from 'resend';
 import ContactFormEmail from '@email-template/contact-form-email';
-import { revalidatePath } from 'next/cache';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -28,6 +27,4 @@ export const sendEmail = async (formData: FormData) => {
       senderEmail,
     }),
   });
-
-  revalidatePath('/');
 };
