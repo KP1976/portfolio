@@ -40,7 +40,7 @@ const ContactFormEmail = ({
             <Text style={{ fontSize: '18px' }}>{message}</Text>
             <Hr />
             <Text>
-              Email wysłał Ci {senderName} z emaila: {senderEmail}
+              Email wysłał(a) Ci {senderName} z emaila: {senderEmail}
             </Text>
           </Section>
         </Container>
