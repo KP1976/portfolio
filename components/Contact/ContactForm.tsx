@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useRef } from 'react';
-import { useRouter } from 'next/navigation';
 
 import styles from '@styles/ContactForm.module.css';
 
@@ -12,7 +11,6 @@ import { toast } from 'sonner';
 const ubuntu = Ubuntu({ weight: '700', subsets: ['latin'] });
 
 export const ContactForm = () => {
-  const router = useRouter();
   const nameRef = useRef<HTMLInputElement>(null);
   const emailRef = useRef<HTMLInputElement>(null);
   const messageRef = useRef<HTMLTextAreaElement>(null);
@@ -22,7 +20,6 @@ export const ContactForm = () => {
       className={styles['contact-form']}
       action={async (formData) => {
         await sendEmail(formData);
-        router.push('/');
 
         if (nameRef.current) {
           nameRef.current.value = '';
