@@ -1,0 +1,50 @@
+.menu-item {
+  list-style-type: none;
+}
+
+.menu-item-link {
+  display: inline-block;
+  font-size: 1.4rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .menu-item:last-child .menu-item-link {
+    background-color: var(--accent-color);
+    border-radius: 3rem;
+    color: black;
+    font-weight: 700;
+    padding: 1.6rem 2.4rem;
+    text-transform: uppercase;
+  }
+
+  .menu-item-link {
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .menu-item:last-child .menu-item-link {
+    line-height: 1;
+  }
+
+  .menu-item-link {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .menu-item-link {
+    font-size: 2.4rem;
+  }
+
+  .menu-item:last-child .menu-item-link {
+    border-radius: 4.5rem;
+    padding: 2.4rem 3.2rem;
+  }
+}
+
+@media only screen and (min-width: 1732px) {
+  .menu-item:last-child .menu-item-link {
+    padding: 2.4rem 5.2rem;
+  }
+}
