@@ -1,0 +1,70 @@
+.cta-button {
+  background-color: var(--main-color);
+  border: none;
+  border-radius: 3rem;
+  color: var(--background-color);
+  font-size: 1.6rem;
+  line-height: 100%;
+  padding: 1.6rem 2.4rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.cta-button-second {
+  background: transparent;
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+}
+
+@media only screen and (min-width: 576px) {
+  .cta-button,
+  .cta-button-second {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .cta-button,
+  .cta-button-second {
+    font-size: 1.4rem;
+    height: 4.6rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .cta-button {
+    border-radius: 5rem;
+    font-size: 1.6rem;
+    height: 5.2rem;
+    line-height: 1.8rem;
+    padding: 1.6rem;
+    width: 100%;
+  }
+
+  .cta-button-second {
+    border: 2px solid var(--main-color);
+    line-height: 1.6rem;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .cta-button {
+    font-size: 2rem;
+    height: 6.8rem;
+    line-height: 1;
+    padding: 2.4rem;
+  }
+
+  .cta-button-second {
+    line-height: 1;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .cta-button {
+    font-size: 2.4rem;
+    height: 7.2rem;
+    padding: 2.4rem;
+  }
+}

@@ -1,0 +1,126 @@
+.header-title {
+  color: var(--main-color);
+  font-size: 4.2rem;
+  margin: 0;
+  padding: 3.2rem 0 0.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.header-subtitle {
+  font-size: 3.1rem;
+  margin: 0;
+  text-align: center;
+}
+
+.header-description {
+  font-size: 1.6rem;
+  letter-spacing: 0.1px;
+  line-height: 150%;
+  margin: 0;
+  padding: 3.2rem 0;
+  text-align: center;
+}
+
+@media only screen and (min-width: 576px) {
+  .header-title {
+    font-size: 4.8rem;
+  }
+
+  .header-subtitle {
+    font-size: 3.7rem;
+    width: 90%;
+  }
+
+  .header-description {
+    width: 99%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .header-title {
+    font-size: 4.4rem;
+    padding-top: 2.4rem;
+  }
+
+  .header-subtitle {
+    font-size: 3.3rem;
+    width: 100%;
+  }
+
+  .header-description {
+    font-size: 1.8rem;
+    padding-top: 2.4rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .header-title {
+    font-size: 5.2rem;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    padding: 0;
+    text-align: left;
+  }
+
+  .header-subtitle {
+    font-size: 2.8rem;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    padding-top: 0.8rem;
+    text-align: left;
+  }
+
+  .header-description {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    padding: 2.4rem 0 0;
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .header-title {
+    font-size: 6.2rem;
+  }
+
+  .header-subtitle {
+    font-size: 3.1rem;
+    line-height: 1.2;
+  }
+
+  .header-description {
+    font-size: 2rem;
+    padding: 3.2rem 0 0;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .header-title {
+    font-size: 7.1rem;
+  }
+
+  .header-subtitle {
+    font-size: 3.6rem;
+  }
+
+  .header-description {
+    padding: 4rem 0 0;
+  }
+}
+
+@media only screen and (min-width: 1732px) {
+  .header-title {
+    font-size: 7.4rem;
+  }
+
+  .header-subtitle {
+    font-size: 3.7rem;
+  }
+
+  .header-description {
+    font-size: 2.4rem;
+    padding: 4.8rem 0 0;
+  }
+}
