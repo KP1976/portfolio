@@ -1,0 +1,23 @@
+.social-icons {
+  column-gap: 3.2rem;
+  display: flex;
+  justify-content: center;
+  padding: 2.4rem 0 0 0;
+  position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+  .social-icons {
+    column-gap: 3.2rem;
+    grid-column: 1 / 2;
+    grid-row: 7 / 8;
+    justify-content: flex-start;
+    padding-top: 0;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .social-icons {
+    column-gap: 4rem;
+  }
+}
