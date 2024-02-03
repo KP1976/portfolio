@@ -8,11 +8,12 @@ import githubIcon from '@public/github.png';
 import linkedinIcon from '@public/linkedin.png';
 
 import styles from '@styles/Contact.module.css';
+import { SectionTitle } from '@components/SectionTitle';
 
 export const Contact = () => {
   return (
     <section className={styles.contact} id="contact">
-      <h2 className="section-title">kontakt</h2>
+      <SectionTitle title="Kontakt" />
       <h3 className={styles['contact-subtitle']}>
         Masz do mnie jakieś pytania? Pisz pod poniższy adres lub skorzystaj
         z&nbsp;formularza kontaktowego
