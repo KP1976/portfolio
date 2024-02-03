@@ -1,15 +1,13 @@
 'use client';
 
 import React, { useRef } from 'react';
-
 import styles from '@styles/ContactForm.module.css';
-
 import { Ubuntu } from 'next/font/google';
 import { sendEmail } from '@utils/sendEmail';
-import { toast } from 'sonner';
 import { ContactFormInputLabel } from './ContactFormInputLabel';
 import { ContactFormTextAreaLabel } from './ContactFormTextAreaLabel';
 import { clearInputs } from '@utils/clearInputs';
+import { toastNotification } from '@utils/notification';
 
 const ubuntu = Ubuntu({ weight: '700', subsets: ['latin'] });
 
@@ -55,17 +53,7 @@ export const ContactForm = () => {
       <button
         type="submit"
         className={`${styles['contact-form-button']} ${ubuntu.className}`}
-        onClick={() => {
-          if (
-            nameRef.current?.value === '' ||
-            emailRef.current?.value === '' ||
-            messageRef.current?.value === ''
-          ) {
-            toast.error('Wypełnij wszystkie pola!');
-          } else {
-            toast.success('Wiadomość została wysłana!');
-          }
-        }}
+        onClick={() => toastNotification(nameRef, emailRef, messageRef)}
       >
         wyślij wiadomość
       </button>
