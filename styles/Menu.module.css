@@ -1,0 +1,27 @@
+.menu {
+  align-items: center;
+  color: white;
+  display: flex;
+  gap: 0 1.6em;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .menu {
+    gap: 0 4.8rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .menu {
+    gap: 0 6.4rem;
+  }
+}
+
+@media only screen and (min-width: 1732px) {
+  .menu {
+    gap: 0 7.2rem;
+  }
+}

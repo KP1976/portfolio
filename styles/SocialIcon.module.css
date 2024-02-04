@@ -1,0 +1,11 @@
+.social-icon {
+  height: 3.2rem;
+  width: 3.2rem;
+}
+
+@media only screen and (min-width: 992px) {
+  .social-icon {
+    height: 4rem;
+    width: 4rem;
+  }
+}

@@ -1,12 +1,13 @@
 'use client';
 
 import React, { useRef } from 'react';
-
 import styles from '@styles/ContactForm.module.css';
-
 import { Ubuntu } from 'next/font/google';
 import { sendEmail } from '@utils/sendEmail';
-import { toast } from 'sonner';
+import { ContactFormInputLabel } from './ContactFormInputLabel';
+import { ContactFormTextAreaLabel } from './ContactFormTextAreaLabel';
+import { clearInputs } from '@utils/clearInputs';
+import { toastNotification } from '@utils/notification';
 
 const ubuntu = Ubuntu({ weight: '700', subsets: ['latin'] });
 
@@ -21,74 +22,39 @@ export const ContactForm = () => {
       action={async (formData) => {
         await sendEmail(formData);
 
-        if (nameRef.current) {
-          nameRef.current.value = '';
-        }
-
-        if (emailRef.current) {
-          emailRef.current.value = '';
-        }
-
-        if (messageRef.current) {
-          messageRef.current.value = '';
-        }
+        clearInputs(nameRef, emailRef, messageRef);
       }}
     >
-      <div className={styles['contact-form-label-and-input']}>
-        <label className={styles['contact-form-label']} htmlFor="contact-name">
-          Imię
-        </label>
-        <input
-          className={`${styles['contact-form-input']} ${ubuntu.className}`}
-          name="name"
-          type="text"
-          id="contact-name"
-          ref={nameRef}
-        />
-      </div>
+      <ContactFormInputLabel
+        value="Imię"
+        htmlFor="contact-name"
+        name="name"
+        type="text"
+        id="contact-name"
+        inputRef={nameRef}
+      />
 
-      <div className={styles['contact-form-label-and-input']}>
-        <label className={styles['contact-form-label']} htmlFor="contact-email">
-          Adres email
-        </label>
-        <input
-          className={styles['contact-form-input']}
-          name="senderEmail"
-          type="email"
-          id="contact-email"
-          ref={emailRef}
-        />
-      </div>
+      <ContactFormInputLabel
+        value="Email"
+        htmlFor="contact-email"
+        name="senderEmail"
+        type="email"
+        id="contact-email"
+        inputRef={emailRef}
+      />
 
-      <div className={styles['contact-form-label-and-input']}>
-        <label
-          className={styles['contact-form-label']}
-          htmlFor="contact-message"
-        >
-          Wiadomość
-        </label>
-        <textarea
-          className={`${styles['contact-form-message']} ${ubuntu.className}`}
-          name="message"
-          id="contact-message"
-          ref={messageRef}
-        />
-      </div>
+      <ContactFormTextAreaLabel
+        value="Wiadomość"
+        htmlFor="contact-message"
+        name="message"
+        id="contact-message"
+        textAreaRef={messageRef}
+      />
 
       <button
         type="submit"
         className={`${styles['contact-form-button']} ${ubuntu.className}`}
-        onClick={() => {
-          if (
-            nameRef.current?.value === '' ||
-            emailRef.current?.value === '' ||
-            messageRef.current?.value === ''
-          ) {
-            toast.error('Wypełnij wszystkie pola!');
-          } else {
-            toast.success('Wiadomość została wysłana!');
-          }
-        }}
+        onClick={() => toastNotification(nameRef, emailRef, messageRef)}
       >
         wyślij wiadomość
       </button>

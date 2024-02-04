@@ -1,11 +1,11 @@
+import React from 'react';
 import { Ubuntu } from 'next/font/google';
 import { Metadata } from 'next';
-import React from 'react';
 
 import { AboutMe } from '@components/AboutMe/AboutMe';
 import { Contact } from '@components/Contact/Contact';
-import { Header } from '@components/Header';
-import { Navigation } from '@components/Navigation';
+import { Header } from '@components/Header/Header';
+import { Navigation } from '@components/Navigation/Navigation';
 import { Projects } from '@components/Projects/Projects';
 import { Footer } from '../components/Footer';
 
