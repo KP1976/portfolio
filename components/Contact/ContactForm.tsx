@@ -21,7 +21,6 @@ export const ContactForm = () => {
       className={styles['contact-form']}
       action={async (formData) => {
         await sendEmail(formData);
-
         clearInputs(nameRef, emailRef, messageRef);
       }}
     >
