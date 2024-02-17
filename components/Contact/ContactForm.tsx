@@ -19,8 +19,10 @@ export const ContactForm = () => {
   return (
     <form
       className={styles['contact-form']}
-      action={async (formData) => {
+      action={async (formData: FormData) => {
         await sendEmail(formData);
+
+        toastNotification(nameRef, emailRef, messageRef);
         clearInputs(nameRef, emailRef, messageRef);
       }}
     >
@@ -53,7 +55,6 @@ export const ContactForm = () => {
       <button
         type="submit"
         className={`${styles['contact-form-button']} ${ubuntu.className}`}
-        onClick={() => toastNotification(nameRef, emailRef, messageRef)}
       >
         wyślij wiadomość
       </button>
