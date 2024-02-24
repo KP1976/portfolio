@@ -6,7 +6,6 @@ import { Ubuntu } from 'next/font/google';
 import { sendEmail } from '@utils/sendEmail';
 import { ContactFormInputLabel } from './ContactFormInputLabel';
 import { ContactFormTextAreaLabel } from './ContactFormTextAreaLabel';
-import { clearInputs } from '@utils/clearInputs';
 import { toastNotification } from '@utils/notification';
 
 const ubuntu = Ubuntu({ weight: '700', subsets: ['latin'] });
@@ -15,6 +14,7 @@ export const ContactForm = () => {
   const nameRef = useRef<HTMLInputElement>(null);
   const emailRef = useRef<HTMLInputElement>(null);
   const messageRef = useRef<HTMLTextAreaElement>(null);
+  const formRef = useRef<HTMLFormElement>(null);
 
   return (
     <form
@@ -23,8 +23,9 @@ export const ContactForm = () => {
         await sendEmail(formData);
 
         toastNotification(nameRef, emailRef, messageRef);
-        clearInputs(nameRef, emailRef, messageRef);
+        formRef.current?.reset();
       }}
+      ref={formRef}
     >
       <ContactFormInputLabel
         value="Imię"
