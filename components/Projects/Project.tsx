@@ -25,6 +25,7 @@ export const Project = ({
   return (
     <li className={styles.project}>
       <Link
+        aria-label="Project Link"
         target="_blank"
         href={projectLink ? projectLink : ''}
         rel="noopener noreferrer"
@@ -32,12 +33,17 @@ export const Project = ({
           projectLink ? { pointerEvents: 'auto' } : { pointerEvents: 'none' }
         }
       >
-        <Image
-          className={styles['project-image']}
-          src={image}
-          alt=""
-          priority
-        />
+        <div className={styles['project-image-container']}>
+          <Image
+            className={styles['project-image']}
+            src={image}
+            alt=""
+            priority
+            fill
+            style={{ objectFit: 'cover' }}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          />
+        </div>
       </Link>
 
       <div className={styles['project-title-icon-container']}>

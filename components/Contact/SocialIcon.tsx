@@ -7,12 +7,25 @@ import styles from '@styles/SocialIcon.module.css';
 type Icons = {
   href: string;
   icon: StaticImageData;
+  iconName: string;
 };
 
-export const SocialIcon = ({ href, icon }: Icons) => {
+export const SocialIcon = ({ href, icon, iconName }: Icons) => {
   return (
-    <Link target="_blank" href={href} rel="noopener noreferrer">
-      <Image className={styles['social-icon']} src={icon} alt="" priority />
-    </Link>
+    <li>
+      <Link
+        target="_blank"
+        href={href}
+        rel="noopener noreferrer"
+        aria-label="Social Icon"
+      >
+        <Image
+          className={styles['social-icon']}
+          src={icon}
+          alt={iconName}
+          priority
+        />
+      </Link>
+    </li>
   );
 };

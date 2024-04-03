@@ -13,11 +13,17 @@ export const SocialIconsList = () => {
       <SocialIcon
         href="https://www.facebook.com/KP1976PL"
         icon={facebookIcon}
+        iconName="Facebook"
       />
-      <SocialIcon href="https://github.com/KP1976" icon={githubIcon} />
+      <SocialIcon
+        href="https://github.com/KP1976"
+        icon={githubIcon}
+        iconName="GitHub"
+      />
       <SocialIcon
         href="https://www.linkedin.com/in/krzysztof-paw%C5%82owski-74aa01154/"
         icon={linkedinIcon}
+        iconName="LinkedIn"
       />
     </ul>
   );
