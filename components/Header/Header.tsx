@@ -9,12 +9,16 @@ import { CTAButton } from './CTAButton';
 export const Header = () => {
   return (
     <header className={styles.header}>
-      <Image
-        className={styles['header-image']}
-        src={headerPic}
-        alt=""
-        priority
-      />
+      <div className={styles['header-image-container']}>
+        <Image
+          className={styles['header-image']}
+          src={headerPic}
+          alt=""
+          fill
+          priority
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        />
+      </div>
       <HeaderText />
 
       <div className={styles.buttons}>

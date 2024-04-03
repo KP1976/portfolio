@@ -19,6 +19,7 @@
 .project-image {
   border-radius: 1.5em;
   height: auto;
+  object-fit: cover;
   width: 100%;
 }
 
