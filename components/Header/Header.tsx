@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import headerPic from '@public/laptop.png';
+import headerPic from '@public/laptop.webp';
 import styles from '@styles/Header.module.css';
 
 import { HeaderText } from './HeaderText';
