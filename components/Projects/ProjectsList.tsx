@@ -1,8 +1,11 @@
 import React from 'react';
-import { Project } from './Project';
+// import { Project } from './Project';
+import Link from 'next/link';
+
 import { projects } from '@database/projects';
 
 import styles from '@styles/ProjectsList.module.css';
+import { CompoundProjectCard } from './compoundProjectCard/ProjectCard';
 
 export const ProjectsList = () => {
   return (
@@ -12,19 +15,22 @@ export const ProjectsList = () => {
           id,
           image,
           projectTitle,
-          projectDescription,
           projectGithubLink,
-          projectLink,
+          projectDescription,
         }) => {
           return (
-            <Project
-              key={id}
-              image={image}
-              projectTitle={projectTitle}
-              projectDescription={projectDescription}
-              projectGithubLink={projectGithubLink}
-              projectLink={projectLink}
-            />
+            <CompoundProjectCard key={id}>
+              <Link target="_blank" href={''} rel="noopener noreferrer">
+                <CompoundProjectCard.ProjectCardImage image={image} />
+              </Link>
+              <CompoundProjectCard.ProjectCardTitle
+                projectTitle={projectTitle}
+                projectGithubLink={projectGithubLink}
+              />
+              <CompoundProjectCard.ProjectCardDescription
+                projectDescription={projectDescription}
+              />
+            </CompoundProjectCard>
           );
         }
       )}
