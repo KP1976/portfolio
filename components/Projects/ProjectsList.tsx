@@ -21,7 +21,10 @@ export const ProjectsList = () => {
           return (
             <CompoundProjectCard key={id}>
               <Link target="_blank" href={''} rel="noopener noreferrer">
-                <CompoundProjectCard.ProjectCardImage image={image} />
+                <CompoundProjectCard.ProjectCardImage
+                  image={image}
+                  alt={projectTitle}
+                />
               </Link>
               <CompoundProjectCard.ProjectCardTitle
                 projectTitle={projectTitle}
